@@ -55,9 +55,15 @@ src/
 ```bash
 bun install
 bun run check
+bun run typecheck
 bun run fix
 bun run build
 ```
+
+## Tooling
+
+- Type checking: `@typescript/native-preview` via `tsgo`
+- Bundling: `tsdown` targeting Node.js
 
 ## Disclaimer
 

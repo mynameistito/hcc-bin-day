@@ -31,19 +31,20 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsdown",
     "start": "bun run src/index.ts",
     "check": "ultracite check",
     "fix": "ultracite fix",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsgo --noEmit",
     "ci": "bun run check && bun run typecheck && bun run build",
     "prepare": "lefthook install"
   },
   "devDependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20260624.1",
     "lefthook": "^2.1.9",
     "oxfmt": "^0.56.0",
     "oxlint": "^1.71.0",
-    "typescript": "^6.0.3",
+    "tsdown": "0.16.0",
     "ultracite": "7.8.3"
   }
 }
