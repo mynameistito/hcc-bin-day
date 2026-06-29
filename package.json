@@ -36,6 +36,7 @@
     "check": "ultracite check",
     "fix": "ultracite fix",
     "typecheck": "tsgo --noEmit",
+    "knip": "bunx knip@latest",
     "ci": "bun run check && bun run typecheck && bun run build",
     "prepare": "lefthook install"
   },

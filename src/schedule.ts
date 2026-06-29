@@ -1,6 +1,6 @@
 import type { CollectionDatesResult } from "./types";
 
-export const COLLECTION_DAY_NAMES = [
+const COLLECTION_DAY_NAMES = [
   "Monday",
   "Tuesday",
   "Wednesday",
@@ -12,7 +12,7 @@ export const COLLECTION_DAY_NAMES = [
 
 export type BinWeek = "red" | "yellow";
 
-export const BINS_BY_WEEK: Record<BinWeek, readonly string[]> = {
+const BINS_BY_WEEK: Record<BinWeek, readonly string[]> = {
   red: ["red bin", "food scraps bin"],
   yellow: ["yellow bin", "glass crate", "food scraps bin"],
 };
@@ -32,9 +32,9 @@ export interface CollectionSchedule {
   };
 }
 
-export const parseCouncilDate = (value: string): string => value.slice(0, 10);
+const parseCouncilDate = (value: string): string => value.slice(0, 10);
 
-export const collectionDayName = (day: number): string => {
+const collectionDayName = (day: number): string => {
   const name = COLLECTION_DAY_NAMES[day - 1];
 
   if (!name) {
@@ -71,7 +71,7 @@ export const buildSchedule = (
 const formatWeekLabel = (week: BinWeek): string =>
   week === "red" ? "Red week" : "Yellow week";
 
-export const formatScheduleDate = (date: string): string => {
+const formatScheduleDate = (date: string): string => {
   const parsed = new Date(`${date}T12:00:00`);
 
   return parsed.toLocaleDateString("en-NZ", {

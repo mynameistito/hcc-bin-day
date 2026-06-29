@@ -50,5 +50,3 @@ export const resolveAddressQuery = async (
     schedule,
   };
 };
-
-export { expandAddressQuery, normalizeAddress } from "./normalize-address";

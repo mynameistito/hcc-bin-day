@@ -51,7 +51,7 @@ const expandStreetTypes = (value: string): string => {
     .join(" ");
 };
 
-export const normalizeAddress = (address: string): string => {
+const normalizeAddress = (address: string): string => {
   const normalized = collapseWhitespace(address).toLowerCase();
 
   return expandStreetTypes(normalizeUnitSuffix(normalized));
