@@ -67,9 +67,10 @@ bun run build
 
 ## Disclaimer
 
-This project is unofficial and is not affiliated with, endorsed by, or supported by Hamilton City Council.
+This project is unofficial and is not affiliated with, endorsed by, supported by, or associated with Hamilton City Council.
 
-It is provided for convenience only. API behavior, availability, and returned collection data may change without notice.
+It is provided independently as a convenience for accessing publicly available collection data. API behavior, availability, response formats, and returned data may change without notice.
+
 
 ## License
 
