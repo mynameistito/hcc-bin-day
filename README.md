@@ -73,4 +73,4 @@ It is provided independently as a convenience for accessing publicly available c
 
 ## License
 
-MIT
+MIT(LICENSE)
