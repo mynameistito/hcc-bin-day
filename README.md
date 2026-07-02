@@ -1,6 +1,6 @@
-# hcc-bin-day-api
+# hcc-bin-day
 
-[![CI](https://github.com/mynameistito/hcc-bin-day-api/actions/workflows/ci.yml/badge.svg)](https://github.com/mynameistito/hcc-bin-day-api/actions/workflows/ci.yml)
+[![CI](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml/badge.svg)](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 TypeScript client for the Hamilton City Council Fight the Landfill bin-day lookup API.
