@@ -41,11 +41,11 @@
     "prepare": "lefthook install"
   },
   "devDependencies": {
-    "@typescript/native-preview": "^7.0.0-dev.20260624.1",
+    "@typescript/native-preview": "^7.0.0-dev.20260702.3",
     "lefthook": "^2.1.9",
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
-    "tsdown": "0.16.0",
-    "ultracite": "7.8.3"
+    "oxfmt": "^0.57.0",
+    "oxlint": "^1.72.0",
+    "tsdown": "0.22.3",
+    "ultracite": "7.8.4"
   }
 }
