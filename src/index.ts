@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { resolveAddressQuery } from "./address";
 import { searchAddresses } from "./hamilton-api";
 import { formatScheduleText, toScheduleJson } from "./schedule";

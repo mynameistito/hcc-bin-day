@@ -21,7 +21,7 @@
     "url": "git+https://github.com/mynameistito/hcc-bin-day.git"
   },
   "bin": {
-    "hcc-bin-day-api": "dist/src/index.js"
+    "hcc-bin-day": "dist/index.mjs"
   },
   "files": [
     "dist",
@@ -29,11 +29,13 @@
     "LICENSE"
   ],
   "type": "module",
-  "main": "./dist/src/index.js",
+  "main": "./dist/index.mjs",
   "scripts": {
     "build": "tsdown",
     "dev": "bun run src/index.ts",
     "check": "ultracite check",
+    "changeset": "changeset",
+    "changeset-add": "bun ./scripts/changeset-add.ts",
     "fix": "ultracite fix",
     "typecheck": "tsgo --noEmit",
     "knip": "bunx knip@latest",
@@ -47,5 +49,9 @@
     "oxlint": "^1.72.0",
     "tsdown": "0.22.3",
     "ultracite": "7.8.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@types/node": "^26.1.0"
   }
 }

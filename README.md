@@ -1,4 +1,4 @@
-# hcc-bin-day
+# @mynameistito/hcc-bin-day
 
 [![CI](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml/badge.svg)](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -26,6 +26,12 @@ https://api2.hcc.govt.nz
 ## Usage
 
 ```bash
+npx @mynameistito/hcc-bin-day
+npx @mynameistito/hcc-bin-day search "12 Grey Street"
+npx @mynameistito/hcc-bin-day lookup "12 Grey Street"
+npx @mynameistito/hcc-bin-day schedule "12 Grey Street"
+npx @mynameistito/hcc-bin-day --json lookup "12 Grey Street"
+
 bun run src/index.ts
 bun run src/index.ts search "12 Grey Street"
 bun run src/index.ts lookup "12 Grey Street"
