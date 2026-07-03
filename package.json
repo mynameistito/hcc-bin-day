@@ -42,6 +42,10 @@
     "ci": "bun run check && bun run typecheck && bun run build",
     "prepare": "lefthook install"
   },
+  "dependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@types/node": "^26.1.0"
+  },
   "devDependencies": {
     "@typescript/native-preview": "^7.0.0-dev.20260702.3",
     "lefthook": "^2.1.9",
@@ -49,9 +53,5 @@
     "oxlint": "^1.72.0",
     "tsdown": "0.22.3",
     "ultracite": "7.8.4"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.31.0",
-    "@types/node": "^26.1.0"
   }
 }
