@@ -31,12 +31,6 @@ npx @mynameistito/hcc-bin-day search "12 Grey Street"
 npx @mynameistito/hcc-bin-day lookup "12 Grey Street"
 npx @mynameistito/hcc-bin-day schedule "12 Grey Street"
 npx @mynameistito/hcc-bin-day --json lookup "12 Grey Street"
-
-bun run src/index.ts
-bun run src/index.ts search "12 Grey Street"
-bun run src/index.ts lookup "12 Grey Street"
-bun run src/index.ts schedule "12 Grey Street"
-bun run src/index.ts --json lookup "12 Grey Street"
 ```
 
 ## Output modes

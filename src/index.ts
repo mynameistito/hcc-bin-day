@@ -14,15 +14,15 @@ const printHelp = () => {
   console.log(`Hamilton bin-day client
 
 Usage:
-  bun run src/index.ts search <address>
-  bun run src/index.ts schedule <address>
-  bun run src/index.ts lookup <address>
-  bun run src/index.ts schedule <address> --text
+  npx @mynameistito/hcc-bin-day search <address>
+  npx @mynameistito/hcc-bin-day schedule <address>
+  npx @mynameistito/hcc-bin-day lookup <address>
+  npx @mynameistito/hcc-bin-day schedule <address> --text
 
 Examples:
-  bun run src/index.ts schedule "14b mountbatten pl"
-  bun run src/index.ts schedule "14b mountbatten pl" --text
-  bun run src/index.ts lookup "12 grey st"
+  npx @mynameistito/hcc-bin-day schedule "14b mountbatten pl"
+  npx @mynameistito/hcc-bin-day schedule "14b mountbatten pl" --text
+  npx @mynameistito/hcc-bin-day lookup "12 grey st"
 
 Output is JSON by default. Use --text (or --pretty) for human-readable output.
 Address input is flexible: unit suffixes (14b -> 14B) and street types (pl, st, rd, etc.).
