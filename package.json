@@ -40,7 +40,7 @@
     "fix": "ultracite fix",
     "typecheck": "tsc --noEmit",
     "knip": "bunx knip@latest",
-    "ci": "bun run check && bun run typecheck && bun run build",
+    "ci": "bun run check && bun run typecheck && bun run test && bun run build",
     "prepare": "lefthook install"
   },
   "dependencies": {

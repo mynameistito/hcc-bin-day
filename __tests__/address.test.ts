@@ -26,7 +26,9 @@ const apiLayer = Layer.succeed(HccApi, {
     }),
   searchAddresses: (query) =>
     Effect.succeed(
-      query === "14b mountbatten pl" ? ["14B Mountbatten Place"] : []
+      query === "14b mountbatten pl"
+        ? ["14B Mountbatten Place"]
+        : ["12 Other Road"]
     ),
 });
 
@@ -47,6 +49,6 @@ describe("address resolution", () => {
       resolveAddressQuery("unknown road").pipe(Effect.provide(apiLayer))
     );
 
-    expect(result).toEqual({ matches: [], ok: false });
+    expect(result).toEqual({ matches: ["12 Other Road"], ok: false });
   });
 });

@@ -14,13 +14,39 @@ const AddressLookupResult = Schema.Struct({
   Collection_Address: Schema.String,
 });
 
+const isValidCouncilDate = (value: string): boolean => {
+  if (!/^\d{4}-\d{2}-\d{2}/u.test(value)) {
+    return false;
+  }
+
+  const [yearPart, monthPart, dayPart] = value
+    .slice(0, 10)
+    .split("-")
+    .map(Number);
+  const year = yearPart ?? Number.NaN;
+  const month = monthPart ?? Number.NaN;
+  const day = dayPart ?? Number.NaN;
+  if (![year, month, day].every(Number.isInteger)) {
+    return false;
+  }
+
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return (
+    date.getUTCFullYear() === year &&
+    date.getUTCMonth() === month - 1 &&
+    date.getUTCDate() === day
+  );
+};
+
+const CouncilDate = Schema.String.pipe(Schema.filter(isValidCouncilDate));
+
 /** A collection record returned by the council endpoint. */
 const CollectionDatesResult = Schema.Struct({
   Address: Schema.String,
   CollectionDay: Schema.Number.pipe(Schema.int(), Schema.between(1, 7)),
   CollectionWeek: Schema.Number.pipe(Schema.int()),
-  RedBin: Schema.String.pipe(Schema.pattern(/^\d{4}-\d{2}-\d{2}/u)),
-  YellowBin: Schema.String.pipe(Schema.pattern(/^\d{4}-\d{2}-\d{2}/u)),
+  RedBin: CouncilDate,
+  YellowBin: CouncilDate,
 });
 
 const AddressLookupResults = Schema.Array(AddressLookupResult);
@@ -79,6 +105,14 @@ const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
             : // oxlint-disable-next-line sonarjs/no-nested-conditional
               response.status >= 200 && response.status < 300
               ? response.json.pipe(
+                  Effect.mapError(
+                    (cause) =>
+                      new HccApiError({
+                        cause,
+                        operation: "searchAddresses",
+                        reason: "decode",
+                      })
+                  ),
                   Effect.flatMap((body) =>
                     Effect.try({
                       catch: (cause) =>
@@ -134,6 +168,14 @@ const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
             : // oxlint-disable-next-line sonarjs/no-nested-conditional
               response.status >= 200 && response.status < 300
               ? response.json.pipe(
+                  Effect.mapError(
+                    (cause) =>
+                      new HccApiError({
+                        cause,
+                        operation: "getCollectionSchedule",
+                        reason: "decode",
+                      })
+                  ),
                   Effect.flatMap((body) =>
                     Effect.try({
                       catch: (cause) =>
