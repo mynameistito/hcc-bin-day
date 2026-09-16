@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import { buildSchedule, toScheduleJson } from "../src/schedule";
+import { buildSchedule, toScheduleJson } from "@/schedule";
 
 const councilResult = {
   Address: "14B Mountbatten Place",

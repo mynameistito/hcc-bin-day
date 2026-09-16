@@ -6,8 +6,8 @@ import * as Effect from "effect/Effect";
 import * as Layer from "effect/Layer";
 import * as Schema from "effect/Schema";
 
-import { buildSchedule } from "./schedule";
-import type { CollectionSchedule } from "./schedule";
+import { buildSchedule } from "@/schedule";
+import type { CollectionSchedule } from "@/schedule";
 
 /** An address returned by the council address search endpoint. */
 const AddressLookupResult = Schema.Struct({

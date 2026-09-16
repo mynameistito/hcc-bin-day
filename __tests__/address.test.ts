@@ -5,8 +5,8 @@ import * as Effect from "effect/Effect";
 // oxlint-disable-next-line sonarjs/no-wildcard-import
 import * as Layer from "effect/Layer";
 
-import { resolveAddressQuery } from "../src/address";
-import { HccApi } from "../src/hcc-api";
+import { resolveAddressQuery } from "@/address";
+import { HccApi } from "@/hcc-api";
 
 const apiLayer = Layer.succeed(HccApi, {
   getCollectionSchedule: () =>

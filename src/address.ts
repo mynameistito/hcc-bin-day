@@ -1,10 +1,10 @@
 // oxlint-disable-next-line sonarjs/no-wildcard-import
 import * as Effect from "effect/Effect";
 
-import { HccApi } from "./hcc-api";
-import type { HccApiError } from "./hcc-api";
-import { expandAddressQuery, pickMatchingAddress } from "./normalize-address";
-import type { CollectionSchedule } from "./schedule";
+import { HccApi } from "@/hcc-api";
+import type { HccApiError } from "@/hcc-api";
+import { expandAddressQuery, pickMatchingAddress } from "@/normalize-address";
+import type { CollectionSchedule } from "@/schedule";
 
 const NO_ADDRESS_FOUND = "No address found";
 

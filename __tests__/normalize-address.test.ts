@@ -1,9 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import {
-  expandAddressQuery,
-  pickMatchingAddress,
-} from "../src/normalize-address";
+import { expandAddressQuery, pickMatchingAddress } from "@/normalize-address";
 
 describe("address normalization", () => {
   test("expands street types and normalizes unit suffixes", () => {

@@ -2,9 +2,9 @@
 // oxlint-disable-next-line sonarjs/no-wildcard-import
 import * as Effect from "effect/Effect";
 
-import { resolveAddressQuery } from "./address";
-import { hccApiLayer, HccApi } from "./hcc-api";
-import { formatScheduleText, toScheduleJson } from "./schedule";
+import { resolveAddressQuery } from "@/address";
+import { hccApiLayer, HccApi } from "@/hcc-api";
+import { formatScheduleText, toScheduleJson } from "@/schedule";
 
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
