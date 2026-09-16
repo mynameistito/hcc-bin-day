@@ -1,5 +1,11 @@
 # @mynameistito/hcc-bin-day
 
+## 0.1.4
+
+### Patch Changes
+
+- 4d76e6a: Enable additional Ultracite anti-slop and SonarJS rules, and fix the resulting diagnostics without weakening lint coverage.
+
 ## 0.1.3
 
 ### Patch Changes
