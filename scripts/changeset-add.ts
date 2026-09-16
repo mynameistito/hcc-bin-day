@@ -16,52 +16,55 @@ import { createRequire } from "node:module";
 import path from "node:path";
 
 interface PackageJson {
-  dependencies?: Record<string, unknown>;
-  devDependencies?: Record<string, unknown>;
-  name?: unknown;
-  optionalDependencies?: Record<string, unknown>;
-  peerDependencies?: Record<string, unknown>;
+  dependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  name: string;
+  optionalDependencies?: Record<string, string>;
+  peerDependencies?: Record<string, string>;
 }
 
 type ChangesetType = "patch" | "minor" | "major";
 
 const changesetTypes = ["patch", "minor", "major"] as const;
+const PACKAGE_JSON_FILENAME = "package.json";
 
 const isChangesetType = (type: string | undefined): type is ChangesetType =>
-  changesetTypes.includes(type as ChangesetType);
+  changesetTypes.some((changesetType) => changesetType === type);
 
 const findProjectRoot = (startDir: string) => {
   let currentDir = startDir;
 
   while (currentDir !== path.dirname(currentDir)) {
-    if (existsSync(path.join(currentDir, "package.json"))) {
+    if (existsSync(path.join(currentDir, PACKAGE_JSON_FILENAME))) {
       return currentDir;
     }
 
     currentDir = path.dirname(currentDir);
   }
 
-  if (existsSync(path.join(currentDir, "package.json"))) {
+  if (existsSync(path.join(currentDir, PACKAGE_JSON_FILENAME))) {
     return currentDir;
   }
 
-  console.error("Could not find package.json from script location");
+  console.error(`Could not find ${PACKAGE_JSON_FILENAME} from script location`);
   process.exit(1);
 };
 
 const readPackageJson = (packageJsonPath: string) => {
   try {
-    return JSON.parse(readFileSync(packageJsonPath, "utf-8")) as PackageJson;
+    return JSON.parse<PackageJson>(readFileSync(packageJsonPath, "utf-8"));
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
-    console.error(`Failed to read package.json: ${message}`);
+    console.error(`Failed to read ${PACKAGE_JSON_FILENAME}: ${message}`);
     process.exit(1);
   }
 };
 
 const getPackageName = (packageJson: PackageJson) => {
-  if (typeof packageJson.name !== "string" || !packageJson.name.trim()) {
-    console.error("package.json must include a non-empty name field");
+  if (!packageJson.name.trim()) {
+    console.error(
+      `${PACKAGE_JSON_FILENAME} must include a non-empty name field`
+    );
     process.exit(1);
   }
 
@@ -87,7 +90,7 @@ const assertChangesetsCliInstalled = (
   }
 
   const requireFromProject = createRequire(
-    path.join(projectRoot, "package.json")
+    path.join(projectRoot, PACKAGE_JSON_FILENAME)
   );
 
   try {
@@ -141,7 +144,9 @@ if (!summary.trim()) {
 }
 
 const projectRoot = findProjectRoot(import.meta.dirname);
-const packageJson = readPackageJson(path.join(projectRoot, "package.json"));
+const packageJson = readPackageJson(
+  path.join(projectRoot, PACKAGE_JSON_FILENAME)
+);
 const packageName = getPackageName(packageJson);
 assertChangesetsCliInstalled(packageJson, projectRoot);
 

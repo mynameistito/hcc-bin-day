@@ -10,6 +10,14 @@ declare const process: {
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
 
+type JsonValue =
+  | boolean
+  | null
+  | number
+  | string
+  | readonly JsonValue[]
+  | { readonly [key: string]: JsonValue };
+
 const printHelp = () => {
   console.log(`Hamilton bin-day client
 
@@ -50,7 +58,7 @@ const parseArgs = (argv: string[]) => {
   return { command, json: !textFromFlag, query };
 };
 
-const printJson = (value: unknown) => {
+const printJson = (value: JsonValue) => {
   console.log(JSON.stringify(value, null, 2));
 };
 
