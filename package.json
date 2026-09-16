@@ -43,15 +43,15 @@
     "prepare": "lefthook install"
   },
   "dependencies": {
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "^3.0.3",
     "@types/node": "^26.1.0"
   },
   "devDependencies": {
-    "@typescript/native-preview": "^7.0.0-dev.20260702.3",
-    "lefthook": "^2.1.9",
-    "oxfmt": "^0.57.0",
-    "oxlint": "^1.72.0",
-    "tsdown": "0.22.3",
-    "ultracite": "7.8.4"
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "lefthook": "^2.1.14",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
+    "tsdown": "0.23.0",
+    "ultracite": "7.12.0"
   }
 }
