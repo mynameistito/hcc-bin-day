@@ -10,12 +10,12 @@ import { buildSchedule } from "./schedule";
 import type { CollectionSchedule } from "./schedule";
 
 /** An address returned by the council address search endpoint. */
-export const AddressLookupResult = Schema.Struct({
+const AddressLookupResult = Schema.Struct({
   Collection_Address: Schema.String,
 });
 
 /** A collection record returned by the council endpoint. */
-export const CollectionDatesResult = Schema.Struct({
+const CollectionDatesResult = Schema.Struct({
   Address: Schema.String,
   CollectionDay: Schema.Number.pipe(Schema.int(), Schema.between(1, 7)),
   CollectionWeek: Schema.Number.pipe(Schema.int()),
@@ -57,7 +57,7 @@ export interface HccApiService {
 }
 
 /** Construct the council API service using the Effect HTTP client. */
-export const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
+const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
   Effect.gen(function* make() {
     const client = yield* HttpClient.HttpClient;
 
@@ -186,11 +186,9 @@ export const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
   });
 
 /** Production API layer using the Effect Node HTTP client. */
-export const hccApiLayerWithoutDependencies = Layer.effect(HccApi, make);
+const hccApiLayerWithoutDependencies = Layer.effect(HccApi, make);
 
 /** Production API layer using the Effect Node HTTP client. */
 export const hccApiLayer = hccApiLayerWithoutDependencies.pipe(
   Layer.provide(NodeHttpClient.layer)
 );
-
-export type HccSchedule = CollectionSchedule;
