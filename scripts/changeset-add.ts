@@ -28,6 +28,14 @@ type ChangesetType = "patch" | "minor" | "major";
 const changesetTypes = ["patch", "minor", "major"] as const;
 const PACKAGE_JSON_FILENAME = "package.json";
 
+const isObject = (value: unknown): value is object => Object(value) === value;
+
+const isPackageJson = (value: unknown): value is PackageJson =>
+  isObject(value) && "name" in value;
+
+const isString = (value: PackageJson["name"]): value is string =>
+  Object.prototype.toString.call(value) === "[object String]";
+
 const isChangesetType = (type: string | undefined): type is ChangesetType =>
   changesetTypes.some((changesetType) => changesetType === type);
 
@@ -52,7 +60,13 @@ const findProjectRoot = (startDir: string) => {
 
 const readPackageJson = (packageJsonPath: string) => {
   try {
-    return JSON.parse<PackageJson>(readFileSync(packageJsonPath, "utf-8"));
+    const parsed: unknown = JSON.parse(readFileSync(packageJsonPath, "utf-8"));
+
+    if (!isPackageJson(parsed)) {
+      throw new Error(`${PACKAGE_JSON_FILENAME} must contain an object`);
+    }
+
+    return parsed;
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
     console.error(`Failed to read ${PACKAGE_JSON_FILENAME}: ${message}`);
@@ -63,17 +77,14 @@ const readPackageJson = (packageJsonPath: string) => {
 const getPackageName = (packageJson: PackageJson) => {
   const { name } = packageJson;
 
-  if (
-    Object.prototype.toString.call(name) !== "[object String]" ||
-    !String(name).trim()
-  ) {
+  if (!isString(name) || !name.trim()) {
     console.error(
       `${PACKAGE_JSON_FILENAME} must include a non-empty name field`
     );
     process.exit(1);
   }
 
-  return String(name);
+  return name;
 };
 
 const hasChangesetsCliDependency = (packageJson: PackageJson) =>
