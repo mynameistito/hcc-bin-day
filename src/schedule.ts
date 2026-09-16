@@ -10,7 +10,7 @@ const COLLECTION_DAY_NAMES = [
   "Sunday",
 ] as const;
 
-export type BinWeek = "red" | "yellow";
+type BinWeek = "red" | "yellow";
 
 const BINS_BY_WEEK: Record<BinWeek, readonly string[]> = {
   red: ["red bin", "food scraps bin"],
