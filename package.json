@@ -33,6 +33,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "bun run src/index.ts",
+    "test": "bun test",
     "check": "ultracite check",
     "changeset": "changeset",
     "changeset-add": "bun ./scripts/changeset-add.ts",
@@ -44,7 +45,10 @@
   },
   "dependencies": {
     "@changesets/cli": "^3.0.3",
-    "@types/node": "^26.1.0"
+    "@effect/platform": "^0.97.2",
+    "@effect/platform-node": "^0.108.2",
+    "@types/node": "^26.1.0",
+    "effect": "^3.22.2"
   },
   "devDependencies": {
     "@typescript/native": "npm:typescript@^7.0.2",
