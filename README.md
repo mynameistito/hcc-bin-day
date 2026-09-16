@@ -61,7 +61,7 @@ bun run build
 
 ## Tooling
 
-- Type checking: `@typescript/native-preview` via `tsgo`
+- Type checking: TypeScript via `tsc` (`bun run typecheck`)
 - Bundling: `tsdown` targeting Node.js
 
 ## Disclaimer

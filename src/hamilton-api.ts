@@ -7,12 +7,12 @@ import type {
 
 const API_BASE_URL = "https://api2.hcc.govt.nz";
 
-const fetchJson = async <T>(url: string): Promise<T> => {
+const fetchJson = async <T>(url: string, notFound: T): Promise<T> => {
   const response = await fetch(url);
 
   if (!response.ok) {
     if (response.status === 404) {
-      return [] as T;
+      return notFound;
     }
 
     throw new Error(
@@ -20,7 +20,8 @@ const fetchJson = async <T>(url: string): Promise<T> => {
     );
   }
 
-  return (await response.json()) as T;
+  // SAFETY: Each caller supplies the response type documented by its endpoint.
+  return response.json() as Promise<T>;
 };
 
 export const searchAddresses = async (
@@ -29,7 +30,7 @@ export const searchAddresses = async (
   const url = new URL("/FightTheLandFill/get_Addresses", API_BASE_URL);
   url.searchParams.set("search_string", searchString);
 
-  const results = await fetchJson<AddressLookupResult[]>(url.toString());
+  const results = await fetchJson<AddressLookupResult[]>(url.toString(), []);
   return results.map((result) => result.Collection_Address);
 };
 
@@ -39,7 +40,7 @@ export const getCollectionSchedule = async (
   const url = new URL("/FightTheLandFill/get_Collection_Dates", API_BASE_URL);
   url.searchParams.set("address_string", address);
 
-  const results = await fetchJson<CollectionDatesResult[]>(url.toString());
+  const results = await fetchJson<CollectionDatesResult[]>(url.toString(), []);
   const [first] = results;
 
   if (!first) {

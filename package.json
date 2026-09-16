@@ -37,7 +37,7 @@
     "changeset": "changeset",
     "changeset-add": "bun ./scripts/changeset-add.ts",
     "fix": "ultracite fix",
-    "typecheck": "tsgo --noEmit",
+    "typecheck": "tsc --noEmit",
     "knip": "bunx knip@latest",
     "ci": "bun run check && bun run typecheck && bun run build",
     "prepare": "lefthook install"
@@ -47,11 +47,14 @@
     "@types/node": "^26.1.0"
   },
   "devDependencies": {
-    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint-plugin-github": "6.1.2",
+    "eslint-plugin-sonarjs": "^4.2.0",
     "lefthook": "^2.1.14",
     "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",
     "tsdown": "0.23.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
     "ultracite": "7.12.0"
   }
 }

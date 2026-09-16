@@ -1,4 +1,4 @@
-const STREET_TYPE_ALIASES: Record<string, string> = {
+const STREET_TYPE_ALIASES = {
   av: "avenue",
   ave: "avenue",
   avenue: "avenue",
@@ -32,7 +32,9 @@ const STREET_TYPE_ALIASES: Record<string, string> = {
   tce: "terrace",
   terrace: "terrace",
   way: "way",
-};
+} satisfies Record<string, string>;
+
+const STREET_TYPE_ALIASES_MAP = new Map(Object.entries(STREET_TYPE_ALIASES));
 
 const collapseWhitespace = (value: string): string =>
   value.trim().replaceAll(/\s+/gu, " ");
@@ -47,7 +49,7 @@ const expandStreetTypes = (value: string): string => {
   const tokens = value.split(" ");
 
   return tokens
-    .map((token) => STREET_TYPE_ALIASES[token.toLowerCase()] ?? token)
+    .map((token) => STREET_TYPE_ALIASES_MAP.get(token.toLowerCase()) ?? token)
     .join(" ");
 };
 
