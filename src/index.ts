@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-import { resolveAddressQuery } from "./address";
-import { searchAddresses } from "./hamilton-api";
-import { formatScheduleText, toScheduleJson } from "./schedule";
+// oxlint-disable-next-line sonarjs/no-wildcard-import
+import * as Effect from "effect/Effect";
 
-declare const process: {
-  argv: string[];
-};
+import { resolveAddressQuery } from "@/address";
+import { hccApiLayer, HccApi } from "@/hcc-api";
+import { formatScheduleText, toScheduleJson } from "@/schedule";
 
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
@@ -62,7 +61,7 @@ const printJson = (value: JsonValue) => {
   console.log(JSON.stringify(value, null, 2));
 };
 
-const main = async () => {
+const main = Effect.gen(function* main() {
   const { json, command, query } = parseArgs(process.argv);
 
   if (
@@ -81,7 +80,8 @@ const main = async () => {
   }
 
   if (command === "search") {
-    const matches = await searchAddresses(query);
+    const api = yield* HccApi;
+    const matches = yield* api.searchAddresses(query);
     if (json) {
       printJson({ command, matches, query });
       return;
@@ -92,7 +92,7 @@ const main = async () => {
   }
 
   if (command === "schedule" || command === "lookup") {
-    const resolved = await resolveAddressQuery(query);
+    const resolved = yield* resolveAddressQuery(query);
 
     if (!resolved.ok) {
       if (json) {
@@ -123,6 +123,14 @@ const main = async () => {
   }
 
   printHelp();
-};
+}).pipe(
+  Effect.provide(hccApiLayer),
+  // oxlint-disable-next-line promise/prefer-await-to-callbacks
+  Effect.catchAll((error) => {
+    console.error(`Request failed (${error.reason}) during ${error.operation}`);
+    process.exitCode = 1;
+    return Effect.void;
+  })
+);
 
-await main();
+await Effect.runPromise(main);

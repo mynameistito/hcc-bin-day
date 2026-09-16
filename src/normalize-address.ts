@@ -67,7 +67,7 @@ export const expandAddressQuery = (query: string): string => {
 
 export const pickMatchingAddress = (
   query: string,
-  matches: string[]
+  matches: readonly string[]
 ): string | null => {
   const normalizedQuery = normalizeAddress(query);
   const exactMatches = matches.filter(

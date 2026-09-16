@@ -1,13 +1,8 @@
-export interface AddressLookupResult {
-  Collection_Address: string;
-}
-
+/** Raw collection dates result returned by the council API. */
 export interface CollectionDatesResult {
-  Address: string;
-  RedBin: string;
-  YellowBin: string;
-  CollectionWeek: number;
-  CollectionDay: number;
+  readonly Address: string;
+  readonly RedBin: string;
+  readonly YellowBin: string;
+  readonly CollectionWeek: number;
+  readonly CollectionDay: number;
 }
-
-export type { CollectionSchedule } from "./schedule";

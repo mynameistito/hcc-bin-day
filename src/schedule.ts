@@ -1,4 +1,4 @@
-import type { CollectionDatesResult } from "./types";
+import type { CollectionDatesResult } from "@/types";
 
 const COLLECTION_DAY_NAMES = [
   "Monday",
