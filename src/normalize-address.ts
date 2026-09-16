@@ -34,6 +34,8 @@ const STREET_TYPE_ALIASES = {
   way: "way",
 } satisfies Record<string, string>;
 
+const STREET_TYPE_ALIASES_MAP = new Map(Object.entries(STREET_TYPE_ALIASES));
+
 const collapseWhitespace = (value: string): string =>
   value.trim().replaceAll(/\s+/gu, " ");
 
@@ -47,13 +49,7 @@ const expandStreetTypes = (value: string): string => {
   const tokens = value.split(" ");
 
   return tokens
-    .map((token) => {
-      const alias = Object.entries(STREET_TYPE_ALIASES).find(
-        ([key]) => key === token.toLowerCase()
-      )?.[1];
-
-      return alias ?? token;
-    })
+    .map((token) => STREET_TYPE_ALIASES_MAP.get(token.toLowerCase()) ?? token)
     .join(" ");
 };
 

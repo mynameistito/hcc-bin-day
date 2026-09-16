@@ -18,7 +18,7 @@ import path from "node:path";
 interface PackageJson {
   dependencies?: Record<string, string>;
   devDependencies?: Record<string, string>;
-  name: string;
+  name?: unknown;
   optionalDependencies?: Record<string, string>;
   peerDependencies?: Record<string, string>;
 }
@@ -61,14 +61,19 @@ const readPackageJson = (packageJsonPath: string) => {
 };
 
 const getPackageName = (packageJson: PackageJson) => {
-  if (!packageJson.name.trim()) {
+  const { name } = packageJson;
+
+  if (
+    Object.prototype.toString.call(name) !== "[object String]" ||
+    !String(name).trim()
+  ) {
     console.error(
       `${PACKAGE_JSON_FILENAME} must include a non-empty name field`
     );
     process.exit(1);
   }
 
-  return packageJson.name;
+  return String(name);
 };
 
 const hasChangesetsCliDependency = (packageJson: PackageJson) =>
