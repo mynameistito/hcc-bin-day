@@ -32,9 +32,9 @@ jobs:
         uses: mynameistito/alchemy-deploy@0e2820973a0536bdf9c4e33d0b8a7eebe85372f2 # v2.4.0
         with:
           worker-name: hcc-bin-day
-          deploy-command: bun run deploy
-          destroy-command: bun run destroy
-          production-url: ${{ vars.PRODUCTION_URL }}
+          deploy-command: bunx --no-install alchemy deploy --stage "$STAGE" --yes
+          destroy-command: bunx --no-install alchemy destroy --stage "$STAGE" --yes
+          production-url: https://bin-day.mynameistito.com
           production-branch: main
           ci-workflow: ci.yml
         env:
@@ -55,9 +55,9 @@ jobs:
         uses: mynameistito/alchemy-deploy@0e2820973a0536bdf9c4e33d0b8a7eebe85372f2 # v2.4.0
         with:
           worker-name: hcc-bin-day
-          deploy-command: bun run deploy
-          destroy-command: bun run destroy
-          production-url: ${{ vars.PRODUCTION_URL }}
+          deploy-command: bunx --no-install alchemy deploy --stage "$STAGE" --yes
+          destroy-command: bunx --no-install alchemy destroy --stage "$STAGE" --yes
+          production-url: https://bin-day.mynameistito.com
           production-branch: main
           ci-workflow: ci.yml
           reconcile: true

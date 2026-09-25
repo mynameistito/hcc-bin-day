@@ -11,8 +11,9 @@ const Site = Website.StaticSite(
       runWorkerFirst: ["/api/*"],
     },
     command: "bun run build",
+    domain: stack.stage === "prod" ? "bin-day.mynameistito.com" : undefined,
     main: "./apps/web/src/worker.ts",
-    name: `hcc-bin-day-${stack.stage}`,
+    name: stack.stage === "prod" ? "hcc-bin-day" : `hcc-bin-day-${stack.stage}`,
     outdir: "apps/web/dist",
     workersDev: true,
   }))

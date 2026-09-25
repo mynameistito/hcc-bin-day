@@ -77,7 +77,7 @@ STAGE=prod bun run deploy
 STAGE=prod bun run destroy
 ```
 
-GitHub Actions deploys PR previews and the production branch through [`mynameistito/alchemy-deploy`](https://github.com/mynameistito/alchemy-deploy), pinned to v2.4.0. Configure repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` (with permission to deploy Workers and assets). Set the `PRODUCTION_URL` repository variable to the final HTTPS URL if a custom domain is configured. Without it the workflow reports the default workers.dev URL. No non-Cloudflare hosting is used.
+Production deploys to `https://bin-day.mynameistito.com`; preview stages use their stage-specific `workers.dev` URLs. Alchemy also keeps the production Worker available on `workers.dev`. Before deploying, the `mynameistito.com` zone must exist in the target Cloudflare account so Alchemy can attach the custom domain and manage its DNS/certificate. Configure repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` with permission to deploy Workers, assets, and the custom domain. GitHub Actions uses [`mynameistito/alchemy-deploy`](https://github.com/mynameistito/alchemy-deploy), pinned to v2.4.0. No non-Cloudflare hosting is used.
 
 ## Tooling
 

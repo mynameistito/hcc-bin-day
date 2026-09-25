@@ -5,11 +5,17 @@ if (command !== "deploy" && command !== "destroy") {
   throw new Error("Expected deploy or destroy command");
 }
 
-const stage = process.env.STAGE ?? "dev";
+const stage = process.env.STAGE;
+if (!stage) {
+  throw new Error("STAGE is required for Alchemy deploy and destroy commands");
+}
+if (!/^[a-z0-9][a-z0-9_-]{0,62}$/iu.test(stage)) {
+  throw new Error("STAGE must be a valid Alchemy stage name");
+}
 const child = spawn(
   process.execPath,
   ["x", "alchemy", command, "--stage", stage, "--yes"],
-  { shell: process.platform === "win32", stdio: "inherit" }
+  { stdio: "inherit" }
 );
 
 child.once("error", (error) => {

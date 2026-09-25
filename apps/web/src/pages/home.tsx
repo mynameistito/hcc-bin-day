@@ -14,6 +14,7 @@ import type { FormEvent } from "react";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
 import { Input } from "../components/ui/input";
+import { ADDRESS_LENGTH_LIMIT, isLookupAddressValid } from "../lib/address";
 import { daysUntilCollection, formatCollectionDate } from "../lib/schedule";
 import type { ScheduleResponse } from "../lib/schedule";
 
@@ -79,6 +80,13 @@ export const HomePage = () => {
     event.preventDefault();
     const query = address.trim();
     if (!query) {
+      return;
+    }
+    if (!isLookupAddressValid(query)) {
+      setState({
+        kind: "error",
+        message: `Enter an address with no more than ${ADDRESS_LENGTH_LIMIT} characters.`,
+      });
       return;
     }
 
@@ -152,6 +160,7 @@ export const HomePage = () => {
               autoComplete="street-address"
               className="min-w-0 flex-1 rounded-xl px-4 py-3.5 text-base outline-none placeholder:text-[#a0a8a0] focus:ring-2 focus:ring-[#a8c18b]"
               id="address"
+              maxLength={ADDRESS_LENGTH_LIMIT}
               onChange={(event) => setAddress(event.target.value)}
               placeholder="Try 12 Grey Street"
               value={address}
