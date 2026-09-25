@@ -125,8 +125,8 @@ const main = Effect.gen(function* main() {
   printHelp();
 }).pipe(
   Effect.provide(hccApiLayer),
-  // oxlint-disable-next-line promise/prefer-await-to-callbacks
-  Effect.catchAll((error) => {
+  // oxlint-disable-next-line github/no-then, promise/prefer-await-to-callbacks, promise/prefer-await-to-then
+  Effect.catch((error) => {
     console.error(`Request failed (${error.reason}) during ${error.operation}`);
     process.exitCode = 1;
     return Effect.void;

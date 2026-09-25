@@ -1,8 +1,8 @@
 import {
   Array as SchemaArray,
-  between,
-  filter,
-  int,
+  isBetween,
+  isInt,
+  makeFilter,
   Number as SchemaNumber,
   String as SchemaString,
   Struct,
@@ -44,7 +44,7 @@ const isValidCouncilDate = (value: string): boolean => {
   );
 };
 
-const CouncilDate = SchemaString.pipe(filter(isValidCouncilDate));
+const CouncilDate = SchemaString.check(makeFilter(isValidCouncilDate));
 
 export const AddressLookupResultSchema = Struct({
   Collection_Address: SchemaString,
@@ -56,8 +56,11 @@ export const AddressLookupResultsSchema = SchemaArray(
 
 export const CollectionDatesResultSchema = Struct({
   Address: SchemaString,
-  CollectionDay: SchemaNumber.pipe(int(), between(1, 7)),
-  CollectionWeek: SchemaNumber.pipe(int()),
+  CollectionDay: SchemaNumber.check(
+    isInt(),
+    isBetween({ maximum: 7, minimum: 1 })
+  ),
+  CollectionWeek: SchemaNumber.check(isInt()),
   RedBin: CouncilDate,
   YellowBin: CouncilDate,
 });
