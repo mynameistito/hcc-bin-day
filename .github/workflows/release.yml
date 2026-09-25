@@ -52,8 +52,8 @@ jobs:
         id: package
         if: steps.changesets.outputs.has-changesets == 'false'
         run: |
-          package_name=$(node --print "require('./package.json').name")
-          package_version=$(node --print "require('./package.json').version")
+          package_name=$(node --print "require('./packages/cli/package.json').name")
+          package_version=$(node --print "require('./packages/cli/package.json').version")
 
           echo "name=$package_name" >> "$GITHUB_OUTPUT"
           echo "version=$package_version" >> "$GITHUB_OUTPUT"
@@ -113,7 +113,7 @@ jobs:
             exit 0
           fi
 
-          npm stage publish . --access public --provenance
+          npm stage publish packages/cli --access public --provenance
           echo "staged=true" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub release
@@ -121,10 +121,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGE_VERSION: ${{ steps.package.outputs.version }}
+          CHANGELOG_PATH: packages/cli/CHANGELOG.md
         run: |
           node --input-type=module <<'EOF' > release-notes.md
           const fs = await import("node:fs/promises");
-          const changelog = await fs.readFile("CHANGELOG.md", "utf8");
+          let changelog;
+          try {
+            changelog = await fs.readFile(process.env.CHANGELOG_PATH, "utf8");
+          } catch {
+            changelog = await fs.readFile("CHANGELOG.md", "utf8");
+          }
           const heading = `## ${process.env.PACKAGE_VERSION}`;
           const start = changelog.indexOf(heading);
           const bodyStart = start === -1 ? -1 : changelog.indexOf("\n", start) + 1;

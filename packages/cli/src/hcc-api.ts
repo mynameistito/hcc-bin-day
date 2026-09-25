@@ -6,65 +6,19 @@ import * as Effect from "effect/Effect";
 import * as Layer from "effect/Layer";
 import * as Schema from "effect/Schema";
 
+import {
+  AddressLookupResultsSchema,
+  CollectionDatesResultsSchema,
+} from "@/council-schema";
+import type {
+  AddressLookupResultSchema,
+  CollectionDatesResultSchema,
+} from "@/council-schema";
 import { buildSchedule } from "@/schedule";
 import type { CollectionSchedule } from "@/schedule";
 
-/** An address returned by the council address search endpoint. */
-const AddressLookupResult = Schema.Struct({
-  Collection_Address: Schema.String,
-});
-
-const isValidCouncilDate = (value: string): boolean => {
-  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/u.test(value)) {
-    return false;
-  }
-
-  const [yearPart, monthPart, dayPart] = value
-    .slice(0, 10)
-    .split("-")
-    .map(Number);
-  const year = yearPart ?? Number.NaN;
-  const month = monthPart ?? Number.NaN;
-  const day = dayPart ?? Number.NaN;
-  if (![year, month, day].every(Number.isInteger)) {
-    return false;
-  }
-
-  const hour = Number(value.slice(11, 13));
-  const minute = Number(value.slice(14, 16));
-  const second = Number(value.slice(17, 19));
-  if (
-    ![hour, minute, second].every(Number.isInteger) ||
-    hour > 23 ||
-    minute > 59 ||
-    second > 59
-  ) {
-    return false;
-  }
-
-  const date = new Date(Date.UTC(year, month - 1, day));
-  return (
-    date.getUTCFullYear() === year &&
-    date.getUTCMonth() === month - 1 &&
-    date.getUTCDate() === day
-  );
-};
-
-const CouncilDate = Schema.String.pipe(Schema.filter(isValidCouncilDate));
-
-/** A collection record returned by the council endpoint. */
-const CollectionDatesResult = Schema.Struct({
-  Address: Schema.String,
-  CollectionDay: Schema.Number.pipe(Schema.int(), Schema.between(1, 7)),
-  CollectionWeek: Schema.Number.pipe(Schema.int()),
-  RedBin: CouncilDate,
-  YellowBin: CouncilDate,
-});
-
-const AddressLookupResults = Schema.Array(AddressLookupResult);
-const CollectionDatesResults = Schema.Array(CollectionDatesResult);
-type AddressLookup = Schema.Schema.Type<typeof AddressLookupResult>;
-type CollectionDates = Schema.Schema.Type<typeof CollectionDatesResult>;
+type AddressLookup = Schema.Schema.Type<typeof AddressLookupResultSchema>;
+type CollectionDates = Schema.Schema.Type<typeof CollectionDatesResultSchema>;
 
 /** Errors raised while communicating with or decoding the council API. */
 // oxlint-disable-next-line unicorn/throw-new-error -- Schema.TaggedError is a class factory, not a constructor.
@@ -134,7 +88,9 @@ const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
                           reason: "decode",
                         }),
                       try: () =>
-                        Schema.decodeUnknownSync(AddressLookupResults)(body),
+                        Schema.decodeUnknownSync(AddressLookupResultsSchema)(
+                          body
+                        ),
                     })
                   )
                 )
@@ -197,7 +153,9 @@ const make: Effect.Effect<HccApiService, never, HttpClient.HttpClient> =
                           reason: "decode",
                         }),
                       try: () =>
-                        Schema.decodeUnknownSync(CollectionDatesResults)(body),
+                        Schema.decodeUnknownSync(CollectionDatesResultsSchema)(
+                          body
+                        ),
                     })
                   )
                 )

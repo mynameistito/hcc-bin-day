@@ -161,7 +161,7 @@ if (!summary.trim()) {
 
 const projectRoot = findProjectRoot(import.meta.dirname);
 const packageJson = readPackageJson(
-  path.join(projectRoot, PACKAGE_JSON_FILENAME)
+  path.join(projectRoot, "packages", "cli", PACKAGE_JSON_FILENAME)
 );
 const packageName = getPackageName(packageJson);
 assertChangesetsCliInstalled(packageJson, projectRoot);

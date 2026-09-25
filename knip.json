@@ -1,4 +1,20 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "project": ["src/**/*.ts", "*.config.ts"]
+  "workspaces": {
+    ".": {
+      "entry": ["alchemy.run.ts", "scripts/**/*.ts"],
+      "project": ["*.config.ts", "scripts/**/*.ts"]
+    },
+    "apps/docs": {
+      "entry": ["blume.config.ts"]
+    },
+    "apps/web": {
+      "entry": ["src/worker.ts"],
+      "project": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css"]
+    },
+    "packages/cli": {
+      "entry": ["scripts/**/*.ts"],
+      "project": ["src/**/*.ts", "scripts/**/*.ts"]
+    }
+  }
 }
