@@ -34,7 +34,7 @@
   "dependencies": {
     "@changesets/cli": "^3.0.3",
     "@effect/platform-bun": "catalog:",
-    "alchemy": "2.0.0-beta.77",
+    "alchemy": "2.0.0-beta.78",
     "effect": "catalog:"
   },
   "devDependencies": {
