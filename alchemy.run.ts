@@ -2,21 +2,30 @@ import { Stack } from "alchemy";
 import { providers, state, Website } from "alchemy/Cloudflare";
 import { gen } from "effect/Effect";
 
-const Site = Website.StaticSite(
-  "Website",
-  Stack.useSync((stack) => ({
+const websiteProps = (stage: string) => {
+  const props = {
     assets: {
-      htmlHandling: "force-trailing-slash",
-      notFoundHandling: "single-page-application",
+      htmlHandling: "force-trailing-slash" as const,
+      notFoundHandling: "single-page-application" as const,
       runWorkerFirst: ["/api/*"],
     },
     command: "bun run build",
-    domain: stack.stage === "prod" ? "bin-day.mynameistito.com" : undefined,
     main: "./apps/web/src/worker.ts",
-    name: stack.stage === "prod" ? "hcc-bin-day" : `hcc-bin-day-${stack.stage}`,
+    name: stage === "prod" ? "hcc-bin-day" : `hcc-bin-day-${stage}`,
     outdir: "apps/web/dist",
     workersDev: true,
-  }))
+  };
+
+  if (stage === "prod") {
+    return { ...props, domain: "bin-day.mynameistito.com" };
+  }
+
+  return props;
+};
+
+const Site = Website.StaticSite(
+  "Website",
+  Stack.useSync((stack) => websiteProps(stack.stage))
 );
 
 export default Stack(
