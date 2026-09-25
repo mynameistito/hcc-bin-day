@@ -1,0 +1,67 @@
+name: Deploy Cloudflare Workers
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+concurrency:
+  group: deploy-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || github.event.workflow_run.event == 'pull_request' && format('pr-{0}', github.event.workflow_run.pull_requests[0].number) || github.event.workflow_run.event == 'push' && 'prod' || 'other' }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      deployments: write
+      pull-requests: write
+    steps:
+      - name: Deploy or clean up preview
+        uses: mynameistito/alchemy-deploy@0e2820973a0536bdf9c4e33d0b8a7eebe85372f2 # v2.4.0
+        with:
+          worker-name: hcc-bin-day
+          deploy-command: bun run deploy
+          destroy-command: bun run destroy
+          production-url: ${{ vars.PRODUCTION_URL }}
+          production-branch: main
+          ci-workflow: ci.yml
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+  reconcile:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      deployments: write
+      pull-requests: read
+    steps:
+      - name: Reconcile closed pull-request previews
+        uses: mynameistito/alchemy-deploy@0e2820973a0536bdf9c4e33d0b8a7eebe85372f2 # v2.4.0
+        with:
+          worker-name: hcc-bin-day
+          deploy-command: bun run deploy
+          destroy-command: bun run destroy
+          production-url: ${{ vars.PRODUCTION_URL }}
+          production-branch: main
+          ci-workflow: ci.yml
+          reconcile: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

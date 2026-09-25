@@ -1,0 +1,27 @@
+{
+  "name": "@mynameistito/hcc-bin-day-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun run ../../scripts/build-web.ts",
+    "dev": "vite --host 0.0.0.0",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.120.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "effect": "^3.22.2",
+    "tailwindcss": "^4.1.11",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vite": "^6.3.5"
+  }
+}

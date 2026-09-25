@@ -2,7 +2,11 @@
 
 [![CI](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml/badge.svg)](https://github.com/mynameistito/hcc-bin-day/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-TypeScript client for the Hamilton City Council Fight the Landfill bin-day lookup API.
+Look up the next Hamilton City Council bin collection for an address, or use the TypeScript CLI client to query the same public service.
+
+- **Web app:** address lookup, next collection date, and bins to put out.
+- **Documentation:** collection guide and project details at `/docs`.
+- **CLI:** published TypeScript client at `@mynameistito/hcc-bin-day`.
 
 ## What it does
 
@@ -12,7 +16,7 @@ TypeScript client for the Hamilton City Council Fight the Landfill bin-day looku
 
 ## API endpoints
 
-This client talks to the public Hamilton City Council backend used by the Fight the Landfill page:
+The web Worker and CLI use the public Hamilton City Council backend used by the Fight the Landfill page:
 
 - `GET /FightTheLandFill/get_Addresses?search_string=...`
 - `GET /FightTheLandFill/get_Collection_Dates?address_string=...`
@@ -43,21 +47,37 @@ npx @mynameistito/hcc-bin-day --json lookup "12 Grey Street"
 ## Project structure
 
 ```text
-src/
-  hamilton-api.ts
-  index.ts
-  types.ts
+apps/
+  docs/      Blume content and configuration
+  web/       TanStack React app, Cloudflare Worker, and Tailwind CSS
+packages/
+  cli/       Published @mynameistito/hcc-bin-day client
 ```
 
 ## Development
 
 ```bash
 bun install
+bun run dev                 # TanStack React site
+bun run --filter @mynameistito/hcc-bin-day-docs dev # Blume docs
 bun run check
 bun run typecheck
-bun run fix
+bun run test
 bun run build
 ```
+
+The repository is a Bun workspace. The CLI package remains `@mynameistito/hcc-bin-day` in `packages/cli`; the web app and Blume documentation have their own package scripts. The docs are built into the website's `/docs` path and deployed together as one Cloudflare Worker.
+
+## Deployment
+
+Deploy and destroy Cloudflare resources with Alchemy:
+
+```bash
+STAGE=prod bun run deploy
+STAGE=prod bun run destroy
+```
+
+GitHub Actions deploys PR previews and the production branch through [`mynameistito/alchemy-deploy`](https://github.com/mynameistito/alchemy-deploy), pinned to v2.4.0. Configure repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` (with permission to deploy Workers and assets). Set the `PRODUCTION_URL` repository variable to the final HTTPS URL if a custom domain is configured. Without it the workflow reports the default workers.dev URL. No non-Cloudflare hosting is used.
 
 ## Tooling
 

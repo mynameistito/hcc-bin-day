@@ -1,0 +1,13 @@
+{
+  "name": "@mynameistito/hcc-bin-day-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "blume build",
+    "dev": "blume dev",
+    "typecheck": "blume check"
+  },
+  "devDependencies": {
+    "blume": "^2.0.0"
+  }
+}

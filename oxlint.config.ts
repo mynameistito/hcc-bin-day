@@ -7,6 +7,6 @@ const jsPlugins = selectJsPlugins(["github", "sonarjs"]);
 
 export default defineConfig({
   extends: [core, antiSlop, jsPlugins],
-  ignorePatterns: core.ignorePatterns,
+  ignorePatterns: [...core.ignorePatterns, "apps/docs/.blume/**"],
   jsPlugins: jsPlugins.jsPlugins,
 });

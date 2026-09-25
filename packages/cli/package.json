@@ -1,0 +1,47 @@
+{
+  "name": "@mynameistito/hcc-bin-day",
+  "version": "0.1.4",
+  "description": "TypeScript client for Hamilton City Council Fight the Landfill bin-day lookup API.",
+  "keywords": [
+    "api",
+    "bin-day",
+    "hamilton",
+    "hamilton-city-council",
+    "typescript",
+    "waste"
+  ],
+  "homepage": "https://github.com/mynameistito/hcc-bin-day#readme",
+  "bugs": {
+    "url": "https://github.com/mynameistito/hcc-bin-day/issues"
+  },
+  "license": "MIT",
+  "author": "Tito <contact@mynameistito.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynameistito/hcc-bin-day.git"
+  },
+  "bin": {
+    "hcc-bin-day": "dist/index.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.97.2",
+    "@effect/platform-node": "^0.108.2",
+    "effect": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0"
+  }
+}
