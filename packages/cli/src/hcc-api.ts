@@ -1,10 +1,10 @@
 /* oxlint-disable max-classes-per-file, sonarjs/no-wildcard-import, no-nested-ternary, no-nested-conditional */
-import { HttpClient } from "@effect/platform";
 import * as NodeHttpClient from "@effect/platform-node/NodeHttpClient";
 import * as Context from "effect/Context";
 import * as Effect from "effect/Effect";
 import * as Layer from "effect/Layer";
 import * as Schema from "effect/Schema";
+import * as HttpClient from "effect/unstable/http/HttpClient";
 
 import {
   AddressLookupResultsSchema,
@@ -22,21 +22,20 @@ type CollectionDates = Schema.Schema.Type<typeof CollectionDatesResultSchema>;
 
 /** Errors raised while communicating with or decoding the council API. */
 // oxlint-disable-next-line unicorn/throw-new-error -- Schema.TaggedError is a class factory, not a constructor.
-export class HccApiError extends Schema.TaggedError<HccApiError>("HccApiError")(
+export class HccApiError extends Schema.TaggedError<HccApiError>()(
   "HccApiError",
   {
     cause: Schema.Unknown,
-    operation: Schema.Literal("searchAddresses", "getCollectionSchedule"),
-    reason: Schema.Literal("transport", "http", "decode", "domain"),
+    operation: Schema.Literals(["searchAddresses", "getCollectionSchedule"]),
+    reason: Schema.Literals(["transport", "http", "decode", "domain"]),
     status: Schema.optional(Schema.Number),
   }
 ) {}
 
 /** The application-owned council API capability. */
-export class HccApi extends Context.Tag("hcc-api/HccApi")<
-  HccApi,
-  HccApiService
->() {}
+export class HccApi extends Context.Service<HccApi, HccApiService>()(
+  "hcc-api/HccApi"
+) {}
 
 /** Operations exposed by the council API service. */
 export interface HccApiService {
@@ -202,5 +201,5 @@ const hccApiLayerWithoutDependencies = Layer.effect(HccApi, make);
 
 /** Production API layer using the Effect Node HTTP client. */
 export const hccApiLayer = hccApiLayerWithoutDependencies.pipe(
-  Layer.provide(NodeHttpClient.layer)
+  Layer.provide(NodeHttpClient.layerUndici)
 );

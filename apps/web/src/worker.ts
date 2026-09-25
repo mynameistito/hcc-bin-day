@@ -1,5 +1,5 @@
 import { decodeUnknownSync } from "effect/Schema";
-import type { Schema } from "effect/Schema";
+import type { Codec } from "effect/Schema";
 
 import {
   AddressLookupResultsSchema,
@@ -18,9 +18,9 @@ interface WorkerEnvironment {
 
 const councilApi = "https://api2.hcc.govt.nz";
 
-const getJson = async <A, I>(
+const getJson = async <A>(
   url: URL,
-  schema: Schema<A, I, never>
+  schema: Codec<A, unknown, never, unknown>
 ): Promise<A> => {
   const response = await fetch(url);
   if (response.status === 404) {

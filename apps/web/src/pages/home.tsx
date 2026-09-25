@@ -35,7 +35,7 @@ const LookupSchema = Struct({
       nextCollection: Struct({
         bins: SchemaArray(SchemaString),
         date: SchemaString,
-        type: Union(Literal("red"), Literal("yellow")),
+        type: Union([Literal("red"), Literal("yellow")]),
       }),
       redBin: SchemaString,
       yellowBin: SchemaString,
