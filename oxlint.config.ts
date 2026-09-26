@@ -2,24 +2,12 @@ import { defineConfig } from "oxlint";
 import antiSlop from "ultracite/oxlint/anti-slop";
 import core from "ultracite/oxlint/core";
 import { jsPluginSettings, selectJsPlugins } from "ultracite/oxlint/js-plugins";
-import react from "ultracite/oxlint/react";
-import shadcn from "ultracite/oxlint/shadcn";
-import tanstack from "ultracite/oxlint/tanstack";
-import tanstackJsPlugins from "ultracite/oxlint/tanstack/js-plugins";
 
-const jsPlugins = selectJsPlugins(["github", "sonarjs", "react-doctor"]);
+const jsPlugins = selectJsPlugins(["github", "sonarjs"]);
 
 export default defineConfig({
-  extends: [
-    antiSlop,
-    core,
-    react,
-    tanstack,
-    tanstackJsPlugins,
-    shadcn,
-    jsPlugins,
-  ],
+  extends: [antiSlop, core, jsPlugins],
   ignorePatterns: core.ignorePatterns,
-  jsPlugins: [...jsPlugins.jsPlugins, ...shadcn.jsPlugins],
+  jsPlugins: jsPlugins.jsPlugins,
   settings: jsPluginSettings,
 });
