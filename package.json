@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/package",
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "hcc-bin-day-workspace",
   "version": "0.0.0",
   "private": true,
