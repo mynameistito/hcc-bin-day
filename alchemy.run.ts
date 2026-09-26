@@ -23,7 +23,7 @@ const websiteProps = (stage: string) => {
   return props;
 };
 
-const resolveStackValue = Stack.useSync;
+const resolveStackValue = Stack.useSync.bind(Stack);
 
 const Site = Website.StaticSite(
   "Website",
