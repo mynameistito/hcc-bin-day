@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
   "name": "@mynameistito/hcc-bin-day",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "TypeScript client for Hamilton City Council Fight the Landfill bin-day lookup API.",
   "keywords": [
     "api",
