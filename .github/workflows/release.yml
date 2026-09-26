@@ -118,7 +118,7 @@ jobs:
         working-directory: packages/cli
 
       - name: Create GitHub release
-        if: steps.changesets.outputs.has-changesets == 'false' && (steps.publish.outputs.published == 'true' || steps.publish.outputs.staged == 'true')
+        if: steps.changesets.outputs.has-changesets == 'false' && steps.publish.outputs.published == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGE_VERSION: ${{ steps.package.outputs.version }}
