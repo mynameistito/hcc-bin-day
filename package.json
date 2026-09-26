@@ -29,7 +29,7 @@
     "knip": "bunx knip@latest",
     "prepare": "lefthook install",
     "test": "bun run --filter '*' test",
-    "typecheck": "bun run --filter '*' typecheck"
+    "typecheck": "bun run --filter '*' typecheck && bunx tsc --project tsconfig.json"
   },
   "dependencies": {
     "@changesets/cli": "^3.0.3",

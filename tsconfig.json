@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["bun", "node"],
+    "noEmit": true
+  },
+  "files": [
+    "alchemy.run.ts",
+    "scripts/alchemy-command.ts",
+    "scripts/build-web.ts"
+  ]
+}
