@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import { readFileSync } from "node:fs";
+
 // oxlint-disable-next-line sonarjs/no-wildcard-import
 import * as Effect from "effect/Effect";
 
@@ -8,6 +10,7 @@ import { formatScheduleText, toScheduleJson } from "@/schedule";
 
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
+const VERSION_FLAGS = new Set(["--version", "-v"]);
 
 type JsonValue =
   | boolean
@@ -20,7 +23,8 @@ type JsonValue =
 const printHelp = () => {
   console.log(`Hamilton bin-day client
 
-Usage:
+  Usage:
+  npx @mynameistito/hcc-bin-day --version
   npx @mynameistito/hcc-bin-day search <address>
   npx @mynameistito/hcc-bin-day schedule <address>
   npx @mynameistito/hcc-bin-day lookup <address>
@@ -62,6 +66,17 @@ const printJson = (value: JsonValue) => {
 };
 
 const main = Effect.gen(function* main() {
+  const rawArgs = process.argv.slice(2);
+
+  if (rawArgs.some((arg) => VERSION_FLAGS.has(arg))) {
+    // SAFETY: This file is the package's own package.json and defines a string version.
+    const packageJson = JSON.parse(
+      readFileSync(new URL("../package.json", import.meta.url), "utf-8")
+    ) as { version: string };
+    console.log(packageJson.version);
+    return;
+  }
+
   const { json, command, query } = parseArgs(process.argv);
 
   if (
