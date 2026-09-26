@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@mynameistito/hcc-bin-day-web",
   "private": true,
   "type": "module",
