@@ -31,6 +31,7 @@ https://api2.hcc.govt.nz
 
 ```bash
 npx @mynameistito/hcc-bin-day
+npx @mynameistito/hcc-bin-day --version
 npx @mynameistito/hcc-bin-day search "12 Grey Street"
 npx @mynameistito/hcc-bin-day lookup "12 Grey Street"
 npx @mynameistito/hcc-bin-day schedule "12 Grey Street"
@@ -43,6 +44,7 @@ npx @mynameistito/hcc-bin-day --json lookup "12 Grey Street"
 - `schedule` returns the collection schedule for an exact match
 - `lookup` searches for an exact match and falls back to suggestions
 - `--json` prints structured JSON for scripting
+- `--version` (or `-v`) prints the installed package version
 
 ## Project structure
 

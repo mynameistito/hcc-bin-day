@@ -6,8 +6,11 @@ import { resolveAddressQuery } from "@/address";
 import { hccApiLayer, HccApi } from "@/hcc-api";
 import { formatScheduleText, toScheduleJson } from "@/schedule";
 
+import packageJson from "../package.json";
+
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
+const VERSION_FLAGS = new Set(["--version", "-v"]);
 
 type JsonValue =
   | boolean
@@ -20,7 +23,8 @@ type JsonValue =
 const printHelp = () => {
   console.log(`Hamilton bin-day client
 
-Usage:
+  Usage:
+  npx @mynameistito/hcc-bin-day --version
   npx @mynameistito/hcc-bin-day search <address>
   npx @mynameistito/hcc-bin-day schedule <address>
   npx @mynameistito/hcc-bin-day lookup <address>
@@ -62,6 +66,13 @@ const printJson = (value: JsonValue) => {
 };
 
 const main = Effect.gen(function* main() {
+  const rawArgs = process.argv.slice(2);
+
+  if (rawArgs.some((arg) => VERSION_FLAGS.has(arg))) {
+    console.log(packageJson.version);
+    return;
+  }
+
   const { json, command, query } = parseArgs(process.argv);
 
   if (
