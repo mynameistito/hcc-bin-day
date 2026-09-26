@@ -1,12 +1,12 @@
 #!/usr/bin/env node
+import { readFileSync } from "node:fs";
+
 // oxlint-disable-next-line sonarjs/no-wildcard-import
 import * as Effect from "effect/Effect";
 
 import { resolveAddressQuery } from "@/address";
 import { hccApiLayer, HccApi } from "@/hcc-api";
 import { formatScheduleText, toScheduleJson } from "@/schedule";
-
-import packageJson from "../package.json";
 
 const TEXT_FLAGS = new Set(["--text", "--pretty", "-p"]);
 const JSON_FLAGS = new Set(["--json", "-j"]);
@@ -69,6 +69,10 @@ const main = Effect.gen(function* main() {
   const rawArgs = process.argv.slice(2);
 
   if (rawArgs.some((arg) => VERSION_FLAGS.has(arg))) {
+    // SAFETY: This file is the package's own package.json and defines a string version.
+    const packageJson = JSON.parse(
+      readFileSync(new URL("../package.json", import.meta.url), "utf-8")
+    ) as { version: string };
     console.log(packageJson.version);
     return;
   }
