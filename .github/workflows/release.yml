@@ -113,8 +113,9 @@ jobs:
             exit 0
           fi
 
-          npm stage publish packages/cli --access public --provenance
+          npm stage publish . --access public --provenance --allow-directory=all
           echo "staged=true" >> "$GITHUB_OUTPUT"
+        working-directory: packages/cli
 
       - name: Create GitHub release
         if: steps.changesets.outputs.has-changesets == 'false' && (steps.publish.outputs.published == 'true' || steps.publish.outputs.staged == 'true')
