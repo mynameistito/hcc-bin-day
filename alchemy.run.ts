@@ -23,9 +23,11 @@ const websiteProps = (stage: string) => {
   return props;
 };
 
+const resolveStackValue = Stack.useSync.bind(Stack);
+
 const Site = Website.StaticSite(
   "Website",
-  Stack.useSync((stack) => websiteProps(stack.stage))
+  resolveStackValue((stack) => websiteProps(stack.stage))
 );
 
 export default Stack(
