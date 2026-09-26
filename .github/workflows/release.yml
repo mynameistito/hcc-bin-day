@@ -113,7 +113,13 @@ jobs:
             exit 0
           fi
 
-          if publish_output=$(npm stage publish . --access public --provenance --allow-directory=all 2>&1); then
+          package_archive=$(bun pm pack --quiet --destination "$RUNNER_TEMP")
+          package_archive="$RUNNER_TEMP/$(basename "$package_archive")"
+          package_directory="$RUNNER_TEMP/npm-package"
+          mkdir -p "$package_directory"
+          tar -xzf "$package_archive" -C "$package_directory" --strip-components=1
+
+          if publish_output=$(npm stage publish "$package_directory" --access public --provenance --allow-directory=all 2>&1); then
             printf '%s\n' "$publish_output"
             echo "staged=true" >> "$GITHUB_OUTPUT"
           else
