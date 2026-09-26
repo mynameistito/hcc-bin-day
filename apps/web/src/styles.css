@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  --color-canvas: #f7f6f2;
+  --color-ink: #22352c;
+  --color-forest: #174e39;
+  --color-copy-muted: #65756b;
+  --color-sage-dark: #536b5c;
+  --color-sage-border: #d6ddd4;
+  --color-sage-copy: #42614e;
+  --color-leaf: #7d9f55;
+  --color-moss: #668747;
+  --color-body-muted: #627067;
+  --color-paper-border: #e4e5de;
+  --color-placeholder: #a0a8a0;
+  --color-focus-leaf: #a8c18b;
+  --color-highlight: #e8ecdf;
+  --color-card-border: #edf0e9;
+  --color-caption: #849080;
+  --color-address-muted: #78837a;
+  --color-yellow-bin: #f5e8bc;
+  --color-yellow-copy: #705816;
+  --color-red-bin: #f3dddd;
+  --color-red-copy: #813c34;
+  --color-detail-muted: #79847b;
+  --color-panel: #f6f7f2;
+  --color-check: #537747;
+  --color-moss-dark: #6a8854;
+  --color-footer-border: #e2e4dc;
+  --color-footer-copy: #647168;
+  --color-step-copy: #33483a;
+  --color-footer-muted: #7d877e;
+  --shadow-lookup: 0 12px 40px -28px #243a2c;
+  --tracking-eyebrow: 0.14em;
+  --tracking-caption: 0.16em;
+  --tracking-heading: -0.055em;
+  --leading-heading: 1.06;
+}
+
 :root {
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   color: #22352c;
