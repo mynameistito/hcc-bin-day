@@ -5,7 +5,7 @@
   "scripts": {
     "build": "blume build",
     "dev": "blume dev",
-    "typecheck": "blume check"
+    "typecheck": "blume check && tsc --noEmit"
   },
   "devDependencies": {
     "blume": "^2.0.0"
