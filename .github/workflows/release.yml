@@ -113,7 +113,12 @@ jobs:
             exit 0
           fi
 
-          npm stage publish . --access public --provenance --allow-directory=all
+          package_archive=$(bun pm pack --quiet --destination "$RUNNER_TEMP")
+          package_directory="$RUNNER_TEMP/npm-package"
+          mkdir -p "$package_directory"
+          tar -xzf "$package_archive" -C "$package_directory" --strip-components=1
+
+          npm stage publish "$package_directory" --access public --provenance --allow-directory=all
           echo "staged=true" >> "$GITHUB_OUTPUT"
         working-directory: packages/cli
 

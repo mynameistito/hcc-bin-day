@@ -201,5 +201,5 @@ const hccApiLayerWithoutDependencies = Layer.effect(HccApi, make);
 
 /** Production API layer using the Effect Node HTTP client. */
 export const hccApiLayer = hccApiLayerWithoutDependencies.pipe(
-  Layer.provide(NodeHttpClient.layerUndici)
+  Layer.provide(NodeHttpClient.layerFetch)
 );
