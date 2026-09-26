@@ -5,4 +5,6 @@ import base from "../../oxlint.config.ts";
 
 export default defineConfig({
   extends: [base, astro],
+  jsPlugins: base.jsPlugins,
+  settings: base.settings,
 });
