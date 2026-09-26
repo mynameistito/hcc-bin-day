@@ -1,5 +1,11 @@
 # @mynameistito/hcc-bin-day
 
+## 0.1.7
+
+### Patch Changes
+
+- 83a7661: Add `--version` and `-v` flags to print the installed CLI package version.
+
 ## 0.1.6
 
 ### Patch Changes
