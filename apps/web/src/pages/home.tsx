@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { NotificationSettings } from "@/components/notification-settings";
 import { PwaInstallHelp, PwaStatus } from "@/components/pwa-controls";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -134,6 +135,10 @@ export const HomePage = () => {
       </header>
 
       <PwaStatus isOnline={isOnline} />
+      <NotificationSettings
+        cancelMissingSchedule={state.kind === "not-found"}
+        schedule={schedule}
+      />
 
       <section className="home-lookup mx-auto grid w-full max-w-6xl gap-9 pt-8 pb-10 sm:gap-12 sm:pt-12 sm:pb-12 md:grid-cols-[1fr_0.85fr] md:items-center md:py-12">
         <div className="home-lookup-copy">

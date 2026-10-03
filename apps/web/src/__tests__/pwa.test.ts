@@ -101,4 +101,45 @@ describe("PWA app shell", () => {
       bypassesApi: true,
     });
   });
+
+  test("requests permission only from explicit reminder opt-in and syncs consent to the worker", async () => {
+    const [settings, deliveryHook, serviceWorker] = await Promise.all([
+      readAppFile("../components/notification-settings.tsx"),
+      readAppFile("../hooks/use-reminder-delivery.ts"),
+      readAppFile("../../public/sw.js"),
+    ]);
+    const enableStart = deliveryHook.indexOf("const enableReminders = async");
+    const disableStart = deliveryHook.indexOf("const disableReminders = async");
+    const enableAction = deliveryHook.slice(enableStart, disableStart);
+
+    expect({
+      hasExplicitOptIn:
+        settings.includes('type="checkbox"') &&
+        settings.includes("event.target.checked") &&
+        settings.includes("void enableReminders()"),
+      hasLocalTime: settings.includes('type="time"'),
+      hasDayBeforeOption: settings.includes("The day before"),
+      showsPermissionState: deliveryHook.includes("Notification.permission"),
+      permissionPromptLivesInOptInAction:
+        enableAction.includes("requestBrowserNotificationPermission(") &&
+        deliveryHook.includes(
+          "const requestBrowserNotificationPermission = async"
+        ) &&
+        deliveryHook.includes("Notification.requestPermission()") &&
+        !settings.includes("Notification.requestPermission"),
+      syncsOptInToServiceWorker:
+        deliveryHook.includes("registration.active?.postMessage({") &&
+        deliveryHook.includes('type: "NOTIFICATION_CONSENT"') &&
+        serviceWorker.includes('type === "NOTIFICATION_CONSENT"'),
+      handlesPushEvents: serviceWorker.includes('addEventListener("push"'),
+    }).toStrictEqual({
+      hasExplicitOptIn: true,
+      hasLocalTime: true,
+      hasDayBeforeOption: true,
+      showsPermissionState: true,
+      permissionPromptLivesInOptInAction: true,
+      syncsOptInToServiceWorker: true,
+      handlesPushEvents: true,
+    });
+  });
 });

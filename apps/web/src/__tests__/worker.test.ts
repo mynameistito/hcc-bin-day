@@ -229,6 +229,55 @@ describe("lookup endpoint input validation", () => {
     expect(invalidScheduleResponse.status).toBe(502);
   });
 
+  test("rate limits reminder mutations by request IP and fails closed on limiter errors", async () => {
+    const assets = {
+      fetch: vi.fn<(request: Request) => Promise<Response>>(),
+    };
+    const rateLimit = vi
+      .fn<
+        (options: {
+          readonly key: string;
+        }) => Promise<{ readonly success: boolean }>
+      >()
+      .mockResolvedValueOnce({ success: false })
+      .mockRejectedValueOnce(new Error("limiter unavailable"));
+    const environment = {
+      ASSETS: assets,
+      REMINDER_LIMIT: { limit: rateLimit },
+    };
+    const request = new Request(
+      "https://example.test/api/reminders/subscription",
+      {
+        method: "DELETE",
+        headers: { "CF-Connecting-IP": "203.0.113.4" },
+      }
+    );
+    const crossOrigin = await worker.fetch(
+      new Request(request, {
+        headers: {
+          "CF-Connecting-IP": "203.0.113.4",
+          Origin: "https://attacker.test",
+        },
+      }),
+      environment
+    );
+
+    const limited = await worker.fetch(request, environment);
+    const unavailable = await worker.fetch(request, environment);
+
+    expect({
+      statuses: [crossOrigin.status, limited.status, unavailable.status],
+      retryAfter: limited.headers.get("Retry-After"),
+      rateLimitKeys: rateLimit.mock.calls.map(([options]) => options.key),
+      assetFetches: assets.fetch.mock.calls.length,
+    }).toStrictEqual({
+      statuses: [403, 429, 503],
+      retryAfter: "60",
+      rateLimitKeys: ["203.0.113.4", "203.0.113.4"],
+      assetFetches: 0,
+    });
+  });
+
   test("delegates non-lookup requests to the asset binding", async () => {
     const response = new Response("asset");
     const assets = {
