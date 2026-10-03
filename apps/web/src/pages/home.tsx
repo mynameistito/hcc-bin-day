@@ -1,9 +1,11 @@
 import { useState } from "react";
 
+import { PwaInstallHelp, PwaStatus } from "@/components/pwa-controls";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useAddressLookup } from "@/hooks/use-address-lookup";
+import { useNetworkStatus } from "@/hooks/use-network-status";
 import { ADDRESS_LENGTH_LIMIT } from "@/lib/address";
 import { daysUntilCollection, formatCollectionDate } from "@/lib/schedule";
 import type { ScheduleResponse } from "@/lib/schedule";
@@ -50,8 +52,19 @@ const collectionBadgeClass = (
   }
 };
 
+const selectVisibleSchedule = (
+  isOnline: boolean,
+  state: ReturnType<typeof useAddressLookup>["state"]
+): ScheduleResponse | null => {
+  if (!isOnline || state.kind !== "success") {
+    return null;
+  }
+  return state.schedule;
+};
+
 export const HomePage = () => {
   const { address, setAddress, state, submitLookup } = useAddressLookup();
+  const isOnline = useNetworkStatus();
   const [theme, setTheme] = useState<"dark" | "light">(() =>
     document.documentElement.dataset.theme === "light" ? "light" : "dark"
   );
@@ -70,7 +83,7 @@ export const HomePage = () => {
     }
   };
 
-  const schedule = state.kind === "success" ? state.schedule : null;
+  const schedule = selectVisibleSchedule(isOnline, state);
   const until = schedule
     ? daysUntilCollection(schedule.nextCollection.date, new Date())
     : null;
@@ -92,11 +105,12 @@ export const HomePage = () => {
             ♻
           </span>
           <span>
-            Hamilton{" "}
+            <span className="hidden min-[360px]:inline">Hamilton </span>
             <span className="text-copy-muted font-normal">Bin Day</span>
           </span>
         </a>
         <nav className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <PwaInstallHelp />
           <a
             className="text-sage-dark rounded-lg px-2 py-2 text-sm font-semibold underline-offset-4 hover:underline sm:px-0"
             href="/docs/"
@@ -118,6 +132,8 @@ export const HomePage = () => {
           </button>
         </nav>
       </header>
+
+      <PwaStatus isOnline={isOnline} />
 
       <section className="home-lookup mx-auto grid w-full max-w-6xl gap-9 pt-8 pb-10 sm:gap-12 sm:pt-12 sm:pb-12 md:grid-cols-[1fr_0.85fr] md:items-center md:py-12">
         <div className="home-lookup-copy">

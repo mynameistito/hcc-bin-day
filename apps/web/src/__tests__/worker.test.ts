@@ -19,6 +19,20 @@ describe("lookup endpoint input validation", () => {
     vi.unstubAllGlobals();
   });
 
+  test("provides an uncached health endpoint for connectivity checks", async () => {
+    const assets = {
+      fetch: vi.fn<(request: Request) => Promise<Response>>(),
+    };
+    const response = await worker.fetch(
+      new Request("https://example.test/api/health", { method: "HEAD" }),
+      { ASSETS: assets }
+    );
+
+    expect(response.status).toBe(204);
+    expect(response.headers.get("Cache-Control")).toBe("no-store");
+    expect(assets.fetch).not.toHaveBeenCalled();
+  });
+
   test("rejects addresses over the length limit before calling the Council API", async () => {
     const request = new Request(
       `https://example.test/api/lookup?address=${"x".repeat(161)}`

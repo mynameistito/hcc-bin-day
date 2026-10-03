@@ -92,6 +92,11 @@ STAGE=prod bun run destroy
 
 Production deploys to `https://bin-day.mynameistito.com`; preview stages use their stage-specific `workers.dev` URLs. Alchemy also keeps the production Worker available on `workers.dev`. Before deploying, the `mynameistito.com` zone must exist in the target Cloudflare account so Alchemy can attach the custom domain and manage its DNS/certificate. Configure repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. The token should be scoped to the target account with **Workers Scripts: Edit** and **Secrets Store: Edit** permissions. GitHub Actions uses [`mynameistito/alchemy-deploy`](https://github.com/mynameistito/alchemy-deploy), pinned immutably to v3.1.3. Credential-free CI uploads the built Worker and site assets; PR previews deploy only that exact-run artifact. No non-Cloudflare hosting is used.
 
+### PWA install smoke test
+
+- **Android (Chrome):** visit the production site over HTTPS, open the browser menu, choose **Install app** (or **Add to Home screen**), then launch it and confirm it opens without browser chrome. After a successful visit, enable airplane mode and confirm the app shell opens with a clear offline message and no collection details.
+- **iOS (Safari):** visit the production site, tap **Share → Add to Home Screen**, then launch the home-screen icon and confirm it opens in standalone mode. Repeat the airplane-mode check to confirm schedules are hidden while offline.
+
 ## Tooling
 
 - Type checking: TypeScript via `tsc` (`bun run typecheck`)
