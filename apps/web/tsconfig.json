@@ -3,6 +3,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["./src/*"],
       "@cli/council-schema": ["../../packages/cli/src/council-schema.ts"],

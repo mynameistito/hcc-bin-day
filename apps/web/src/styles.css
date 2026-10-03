@@ -144,7 +144,7 @@ input {
     padding-block: 0.5rem;
   }
 
-  .home-schedule > article li > span:first-child {
+  .home-schedule > article li > span:first-child > span:first-child {
     width: 1.75rem;
     height: 1.75rem;
   }

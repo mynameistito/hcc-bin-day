@@ -27,12 +27,21 @@ export default defineConfig({
         ),
       },
       {
+        find: /^@web-scripts\/sync-hcc-bin-items$/u,
+        replacement: fileURLToPath(
+          new URL("scripts/sync-hcc-bin-items.ts", import.meta.url)
+        ),
+      },
+      {
         find: "@",
         replacement: fileURLToPath(new URL("src", import.meta.url)),
       },
     ],
   },
   test: {
-    include: ["src/**/__tests__/**/*.test.ts"],
+    include: [
+      "src/**/__tests__/**/*.test.ts",
+      "src/**/__tests__/**/*.test.tsx",
+    ],
   },
 });

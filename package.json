@@ -19,6 +19,7 @@
   "type": "module",
   "scripts": {
     "build": "bun run --filter @mynameistito/hcc-bin-day build && bun run --filter @mynameistito/hcc-bin-day-docs build && bun run --filter @mynameistito/hcc-bin-day-web build",
+    "bins:sync": "bun apps/web/scripts/sync-hcc-bin-items.ts",
     "check": "ultracite check",
     "ci": "bun run check && bun run typecheck && bun run test && bun run build",
     "changeset": "changeset",

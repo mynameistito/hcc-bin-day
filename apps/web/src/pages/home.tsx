@@ -1,10 +1,12 @@
 import { useState } from "react";
 
+import { BinHelpControl } from "@/components/bin-help";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useAddressLookup } from "@/hooks/use-address-lookup";
 import { ADDRESS_LENGTH_LIMIT } from "@/lib/address";
+import { binTypeFromName } from "@/lib/bin-items";
 import { daysUntilCollection, formatCollectionDate } from "@/lib/schedule";
 import type { ScheduleResponse } from "@/lib/schedule";
 
@@ -202,16 +204,22 @@ export const HomePage = () => {
                   <ul className="mt-4 space-y-3">
                     {schedule.nextCollection.bins.map((bin) => (
                       <li
-                        className="bg-panel flex items-center gap-3 rounded-xl px-4 py-3"
+                        className="bg-panel flex items-center justify-between gap-3 rounded-xl px-4 py-3"
                         key={bin}
                       >
-                        <span
-                          aria-hidden="true"
-                          className="text-check bg-surface grid size-8 place-items-center rounded-lg"
-                        >
-                          ✓
+                        <span className="flex min-w-0 items-center gap-3">
+                          <span
+                            aria-hidden="true"
+                            className="text-check bg-surface grid size-8 shrink-0 place-items-center rounded-lg"
+                          >
+                            ✓
+                          </span>
+                          <span className="font-medium">{bin}</span>
                         </span>
-                        <span className="font-medium">{bin}</span>
+                        <BinHelpControl
+                          bin={binTypeFromName(bin)}
+                          binName={bin}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -260,7 +268,6 @@ export const HomePage = () => {
           </Card>
         </div>
       </section>
-
       <section className="home-steps border-footer-border text-footer-copy mx-auto grid w-full max-w-6xl gap-5 border-t py-6 text-sm md:grid-cols-3 md:gap-4 md:pt-6">
         <div>
           <span className="text-step-copy font-semibold">

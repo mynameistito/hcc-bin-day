@@ -1,0 +1,2256 @@
+{
+  "items": [
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 1,
+      "item": "Aerosol cans (including fly spray)",
+      "notes": "Empty cans can go in your red bin. Cans that are not empty need to taken to Lincoln St Resource Recovery Centre for FREE disposal."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 2,
+      "item": "Alkathene piping"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 4,
+      "item": "Aluminium cans"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 5,
+      "item": "Aluminium containers (clean)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 6,
+      "item": "Aluminium foil",
+      "notes": "Aluminium foil/tinfoil is often contaminated with food, and is too small and too low value to recycle."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 7,
+      "item": "Apple core"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 8,
+      "item": "Asthma inhaler (empty)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 9,
+      "item": "Baby formula tins (remove lid and scoop)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 10,
+      "item": "Baby wipes"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 11,
+      "item": "Banana skins"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 12,
+      "item": "Batteries",
+      "notes": "Some batteries can be disposed of for free at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton). Please call to double-check."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 13,
+      "item": "Batteries (torch)",
+      "notes": "Some batteries can be disposed of for free at Lincoln Street Resource Recovery Centre (60 Lincoln Street, Frankton, Hamilton). Please call to double-check."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 14,
+      "item": "Beef bones"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 15,
+      "item": "Beer bottles (remove lids)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 16,
+      "item": "Biscuit wrapping/bags (soft plastic)",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 17,
+      "item": "Biscuit tray (number 3 in the triangle)"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 18,
+      "item": "Bones",
+      "notes": "Animal bones from food sources only. E.g. chicken, fish, beef, lamp etc."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 19,
+      "item": "Books - soft cover",
+      "notes": "If in good condition, please consider donating e.g. to a school, secondhand store or event (Rotary Book Fair) instead."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 20,
+      "item": "Boots",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 21,
+      "item": "Bread bags (soft plastic)",
+      "notes": "Take your own bag to a local bakery, or make your own! Alternatively this item can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 22,
+      "item": "Bricks",
+      "notes": "Check with local construction and demolition companies for disposal options."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 23,
+      "item": "Broken glass (wrap)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 24,
+      "item": "Broken plates (wrap)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 25,
+      "item": "Bubble wrap",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 26,
+      "item": "Cables"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 27,
+      "item": "Candle"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 28,
+      "item": "Cardboard"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 29,
+      "item": "Cardboard - chocolate boxes (remove plastic trays)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 30,
+      "item": "Cardboard - packaging"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 31,
+      "item": "Cardboard - washing powder box (remove liner & scoop)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 32,
+      "item": "Cardboard boxes"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 33,
+      "item": "Cardboard cup holders"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 34,
+      "item": "Cardboard egg cartons"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 35,
+      "item": "Liquid paperboard cartons - juice, long life and dairy free milks",
+      "notes": "While liquid paperboard cartons cannot be collected in Hamilton City Council's yellow kerbside recycling bins, they can be rinsed and dropped off at SaveBoard at 30 Sunshine Ave, Hamilton. See here for a list of other locations around Hamilton where you can drop of your liquid paperboard cartons."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 36,
+      "item": "Cardboard with tape or staples"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 37,
+      "item": "Cardboard yoghurt containers"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 39,
+      "item": "Cat biscuit bags"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 40,
+      "item": "Cat litter"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 41,
+      "item": "Catalogues (remove wrapping)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 42,
+      "item": "Cellophane"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 43,
+      "item": "Cereal boxes (remove inside bag)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 44,
+      "item": "Chemicals",
+      "notes": "Please do not tip any chemicals down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company, such as 3R, at the cost of the person/organisation disposing of them."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 45,
+      "item": "Chip bags",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 46,
+      "item": "Chocolate wrappers",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 47,
+      "item": "Christmas wrapping paper (not plasticised or metallic)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 48,
+      "item": "Cigarette pack"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 49,
+      "item": "Clothes",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 50,
+      "item": "Clothing",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 51,
+      "item": "Coffee cups - biodegradable",
+      "notes": "There is currently no standard for 'biodegradable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the recycling."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 52,
+      "item": "Coffee cups - cardboard",
+      "notes": "Coffee cups are usually made of more than one material, not just cardboard. They need to be placed in the red rubbish wheelie bin to avoid contaminating the recycling."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 53,
+      "item": "Coffee cups - compostable",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the food scraps or recycling."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 54,
+      "item": "Coffee cups - wax or plastic lined",
+      "notes": "Coffee cups are usually made of more than one material which makes them difficult to recycle. They need to be placed in the red rubbish wheelie bin to avoid contaminating the recycling."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 55,
+      "item": "Compact disk (CD) case"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 56,
+      "item": "Concrete",
+      "notes": "Check with local construction and demolition companies for disposal options."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 58,
+      "item": "Cookware - metal pots, pans, tins and utensils",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 59,
+      "item": "Corflute"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 60,
+      "item": "Cork"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 61,
+      "item": "Corrugated cardboard (unwaxed)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 62,
+      "item": "Cottonwool"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 63,
+      "item": "Crockery plates",
+      "notes": "Is there a local charity that you could donate to? IF not in good condition, please dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 64,
+      "item": "Dirty recycling",
+      "notes": "Recycling needs to be rinsed clean with lids off before placing in the yellow recycling wheelie bin or glass crate."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 65,
+      "item": "Drinking glasses",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please wrap and dispose of at the Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 66,
+      "item": "Dust"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 67,
+      "item": "EFTPOS receipt (thermal paper)",
+      "notes": "Receipts are often coated in plastic making them difficult to recycle."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 68,
+      "item": "Egg boxes (cardboard)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 69,
+      "item": "Electrical items",
+      "notes": "Is there a local charity that you could donate to? Alternatively, e-waste recycling options are available."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 70,
+      "item": "Envelopes"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 71,
+      "item": "E-waste",
+      "notes": "Is there a local charity that you could donate it to? Alternatively, e-waste recycling can be taken to the Hamilton Refuse Transfer Station on Lincoln Street - more info available at Where do I take my excess waste?"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 72,
+      "item": "Fabric",
+      "notes": "Is there a local charity, school or arts and crafts club that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 73,
+      "item": "Fluorescent tubes (wrapped)",
+      "notes": "Flourescent light bulbs and tubes can be recycled commercially by Interwaste, who can provide specialty bins for this purpose. Find out more at www.interwaste.co.nz/services/advanced-recycling. Alternatively, they can be disposed of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 74,
+      "item": "Foil pie dishes (clean only)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 75,
+      "item": "Food cans (clean only)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 76,
+      "item": "Food box - empty, clean unwaxed card only"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 77,
+      "item": "Food scraps"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 78,
+      "item": "Fruit peelings"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 79,
+      "item": "Fruit cores or peels"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 80,
+      "item": "Garden hose"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 81,
+      "item": "Garden netting (plastic)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 82,
+      "item": "Garden pots (plastic with number 5 in the triangle)",
+      "notes": "Plant pots are often not clean and have the potential to contaminate recycling. Many garden stores (including Mitre 10, Bunnings and Kings Plant Barn) operate drop-off recycling schemes for plant pots."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 83,
+      "item": "Garden weeds - noxious or non-compostable only",
+      "notes": "Green waste should not be placed in any of your bins - please take it to Hamilton Organic Centre (18 Wickham St, Frankton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 84,
+      "item": "Gib board"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 85,
+      "item": "Glass (food and beverage bottles or jars, no lids)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 86,
+      "item": "Glass (not used for food and beverage)"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 87,
+      "item": "Glass bottles - brown, green, clear, blue, opaque (no lids)"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 88,
+      "item": "Glass food containers (no lids)"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 89,
+      "item": "Glass jars (no lids)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 90,
+      "item": "Glass lamp shade",
+      "notes": "Is there a local charity that you could donate to? Alternatively, please wrap and drop off at the Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 91,
+      "item": "Glass louvre window slats",
+      "notes": "Please dispose of at Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 92,
+      "item": "Glasses, spectacles",
+      "notes": "Please consider taking your used items to your nearest Specsavers store where they can be recycled free of charge."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 93,
+      "item": "Grass clippings",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham Street, Frankton, Hamilton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 94,
+      "item": "Gumboots",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 95,
+      "item": "Hard plastic"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 96,
+      "item": "Hazardous chemicals",
+      "notes": "Please do not dispose of any hazardous waste or chemicals down the drain or into any of your kerbside bins. Household quantities can safely be disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company, such as 3R, at the cost of the person/organisation disposing of them."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 97,
+      "item": "Hazardous sprays",
+      "notes": "Please do not tip any hazardous waste or sprays down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company, such as 3R, at the cost of the person/organisation disposing of them."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 98,
+      "item": "Hedge clippings",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham Street, Frankton, Hamilton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 100,
+      "item": "Ice cream containers (no lid, number 5 in the triangle)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 101,
+      "item": "Insecticides",
+      "notes": "Please do not tip hazardous waste, such as insecticides, down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company like 3R at the cost of the person disposing of them."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 103,
+      "item": "Junk mail plastic packaging"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 104,
+      "item": "Large gas canisters",
+      "notes": "LPG bottles can be swapped at Swap'n'Go or OnGas - see the Swap'n'Go or Ongas websites for more information. You can also recycle LPG bottles for free at the Lincoln Street Resource Recovery Centre (60 Lincoln Street, Frankton, Hamilton). Some metal recyclers may also accept empty bottles, but check with your your preferred supplier first."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 113,
+      "item": "Light bulbs"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 115,
+      "item": "Magazines"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 116,
+      "item": "Mandarin peel"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 117,
+      "item": "Margarine containers (empty, clean)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 118,
+      "item": "McDonald boxes (no food, clean)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 119,
+      "item": "McDonald boxes (with food)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 120,
+      "item": "Meat packing trays (expanded polystyrene)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 121,
+      "item": "Plastic meat trays (clean, with numbers 1, 2, or 5 in the triangle.)",
+      "notes": "Soaker pads and plastic films go into the red rubbish wheelie bin."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 122,
+      "item": "Medical waste",
+      "notes": "Private medical waste disposal services are available. Medical waste should not be placed in any of your bins."
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 123,
+      "item": "Medicine bottles, glass"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 124,
+      "item": "Medicine sprayers / nasal spray bottle (empty)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 125,
+      "item": "Aluminium baking tray - flexible (clean)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 126,
+      "item": "Metal can lids (put inside can)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 127,
+      "item": "Metallic wrapping paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 128,
+      "item": "Milk bottle tops",
+      "notes": "You can recycle these for free at the Lincoln St Resource Recovery Centre."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 129,
+      "item": "Milk cardboard containers",
+      "notes": "While liquid paperboard cartons cannot be collected in Hamilton City Council's yellow kerbside recycling bins, they can be rinsed and dropped off at SaveBoard at 30 Sunshine Ave, Hamilton. See here for a list of other locations around Hamilton where you can drop of your liquid paperboard cartons."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 130,
+      "item": "Milk cartons (wax or foil lined)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 131,
+      "item": "Mirrors (unbroken)",
+      "notes": "Is there a local charity that you could donate to? Alternatively, dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 132,
+      "item": "Motor oil",
+      "notes": "Please do not tip this type of hazardous waste down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a company, such as 3R, at the cost of the person/organisation disposing of them."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 133,
+      "item": "Nappies - disposable"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 134,
+      "item": "Needles (wrapped)",
+      "notes": "Private medical waste disposal services are available and many pharmacies offer a take-back service for needles and syringes. Medical waste should not be placed in any of your bins."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 135,
+      "item": "Newsletter"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 136,
+      "item": "Newspaper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 137,
+      "item": "Newspaper plastic packaging, cover, wrapper"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 138,
+      "item": "Old books",
+      "notes": "If in good condition, please consider donating e.g. to a school, secondhand store or event (Rotary Book Fair) instead."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 139,
+      "item": "Old curtains",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 140,
+      "item": "Old purses/handbags",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 141,
+      "item": "Oven tray",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 142,
+      "item": "Packaging - cardboard"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 143,
+      "item": "Packaging - food wrapping",
+      "notes": "Is it possible to buy the item package-free, or in bulk to reduce the packaging? Alternatively, soft plastic packaging can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 144,
+      "item": "Packaging - polystyrene",
+      "notes": "This items goes into the red rubbish wheelie bin, however there are some recycling options now available via Expol."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 145,
+      "item": "Paint",
+      "notes": "Resene run a PaintWise programme which sees unwanted paint and paint containers recycled or disposed of responsibly. For more information, visit www.resene.co.nz/paintwise.php"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 146,
+      "item": "Paint tins"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 147,
+      "item": "Paper - brochures, pamphlets"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 148,
+      "item": "Paper - coffee cups",
+      "notes": "Coffee cups are usually made of more than one material, not just paper/cardboard. They need to be placed the red rubbish wheelie bin to avoid contaminating the recycling."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 149,
+      "item": "Paper - envelope"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 150,
+      "item": "Paper - envelopes"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 151,
+      "item": "Paper - flyers"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 152,
+      "item": "Paper - junkmail (remove plastic wrapper)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 153,
+      "item": "Paper - letter"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 154,
+      "item": "Paper - newspapers"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 155,
+      "item": "Paper - printer, office"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 156,
+      "item": "Paper - copying"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 157,
+      "item": "Paper - torn, shredded",
+      "notes": "Little bits of paper are too small to be sorted."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 158,
+      "item": "Paper bags (clean)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 159,
+      "item": "Paper towels (bathroom)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 160,
+      "item": "Paperback books",
+      "notes": "If in good condition, please consider donating e.g. to a school, secondhand store or event (Rotary Book Fair) instead."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 161,
+      "item": "Pesticides",
+      "notes": "Please do not tip hazardous waste, such as pesticides, down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company like 3R at the cost of the person disposing of them."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 162,
+      "item": "Phonebooks"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 163,
+      "item": "Photos - black and white or coloured"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 164,
+      "item": "Pizza boxes (remove food scraps)",
+      "notes": "Food scraps or grease contaminate the recycling so please ensure pizza boxes are clean before putting them in the yellow recycling wheelie bin."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 165,
+      "item": "Pizza boxes (with food scraps or lots of oil)",
+      "notes": "Food scraps or grease contaminate the recycling so please place these in the red rubbish wheelie bin."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 166,
+      "item": "Plant pots",
+      "notes": "Plant pots can be taken to any Mitre 10 store."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 167,
+      "item": "Plant punnets (clean, plastic with number 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 168,
+      "item": "Planter bags"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 169,
+      "item": "Plastic bags",
+      "notes": "Can you reuse it first?"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 170,
+      "item": "Plastic bottle tops",
+      "notes": "You can recycle these for free at the Lincoln St Resource Recovery Centre."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 171,
+      "item": "Plastic cleaning bottles (empty, lid removed, with number 2 in the triangle)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 172,
+      "item": "Plastic containers (clean, with numbers 1, 2, or 5 in the triangle)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 174,
+      "item": "Plastic cups (clean, lids and straws removed, with numbers 1, 2, or 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 175,
+      "item": "Plastic feed sacks"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 176,
+      "item": "Plastic film",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 177,
+      "item": "Plastic firelighter"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 179,
+      "item": "Plastic foam"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 180,
+      "item": "Plastic medicine containers (empty and clean, lid removed, with number 5 in the triangle)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 181,
+      "item": "Milk bottles (clean, no lid, plastic with number 2 in the triangle)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 182,
+      "item": "Plastic number 1 (rinsed with lids off)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 183,
+      "item": "Plastic number 2 (no plastic bags)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 184,
+      "item": "Plastic number 3"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 185,
+      "item": "Plastic number 4"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 186,
+      "item": "Plastic number 5 (rinsed with lids off)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 187,
+      "item": "Plastic number 6"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 188,
+      "item": "Plastic number 7"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 189,
+      "item": "Plastic packaging (no number)",
+      "notes": "If you are unsure of the plastic type, it is best to place it in the red rubbish wheelie bin so as not to contaminate the recycling."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 190,
+      "item": "Plastic pill containers (empty, lid removed, with number 5 in the triangle)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 191,
+      "item": "Plastic shampoo bottles (empty, remove lid)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 192,
+      "item": "Plastic toys",
+      "notes": "Is there a local charity, school or kindy that you could donate to? If not in good condition, place in your red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 193,
+      "item": "Plastic wrap",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 194,
+      "item": "Plastic wrapping, bubble wrap",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 195,
+      "item": "Plasticised receipts (cannot be ripped)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 196,
+      "item": "Plate glass",
+      "notes": "Please wrap and dispose of at Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 197,
+      "item": "Polystyrene",
+      "notes": "This items goes into the red rubbish wheelie bin, however there are some recycling options now available via Expol, at Mitre 10 Te Rapa and Mitre 10 Ruakura."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 198,
+      "item": "Polystyrene - expanded"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 199,
+      "item": "Pot plant container (clean, plastic with number 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 200,
+      "item": "Pringles pot/container"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 201,
+      "item": "Printer toner cartridge",
+      "notes": "Check with the provider, as many companies now offer recycling schemes to recycle their printer cartridges. Alternatively you can drop them off at Warehouse Stationery stores for recycling - call to check first."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 202,
+      "item": "Produce bags",
+      "notes": "Could you purchase loose (package-free) produce instead? Can you reuse the produce bags next time you go shopping?"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 203,
+      "item": "PVC spouting/pipes"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 204,
+      "item": "Pyrex",
+      "notes": "Is there a local charity that you could donate to? If chipped or not in good condition, please wrap the item and place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 205,
+      "item": "Pyrex glass",
+      "notes": "Is there a local charity that you could donate to? If chipped or not in good condition, please wrap the item and place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 206,
+      "item": "Ring binder/folder"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 207,
+      "item": "Rope",
+      "notes": "Is there a local charity, school or arts and crafts club that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 208,
+      "item": "Rotten meat"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 209,
+      "item": "Rubber bands"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 210,
+      "item": "Rubber hose"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 211,
+      "item": "Rubbish"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 212,
+      "item": "Sand",
+      "notes": "Check with local construction and demolition companies for disposal options."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 213,
+      "item": "Sandwich containers (clean, plastic with number 1 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 214,
+      "item": "Sanitary pads and tampons (wrap)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 215,
+      "item": "Seed trays (clean, with numbers 1, 2, or 5 in the triangle)",
+      "notes": "Please return to your garden centre or consider re-use."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 216,
+      "item": "Seedling container (clean, no number 1-7 in a triangle)",
+      "notes": "Please return to your garden centre or consider re-use."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 217,
+      "item": "Shoes",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, place in your red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 218,
+      "item": "Shopping bags, supermarket bags",
+      "notes": "Can you reuse it first?"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 219,
+      "item": "Shredded paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 220,
+      "item": "Shrink wrap"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 222,
+      "item": "Smoke alarms",
+      "notes": "Smoke alarms often contain batteries which cannot be taken out and therefore pose a health and safety risk if put in the kerbside bin. You can take smoke alarms to the Lincoln Street Resource Recovery Centre, at 60 Lincoln Street, Frankton for free disposal."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 223,
+      "item": "Soft drink bottles (remove lids)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 224,
+      "item": "Soft plastics (scrunchy plastics)",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 225,
+      "item": "Solvents",
+      "notes": "Please do not tip hazardous waste, such as solvents, down the drain or into any of your kerbside bins. Household quantities can be safely disposed of for free at the Lincoln Street Resource Recovery Centre. Disposal of commercial quantities need to be arranged through a private company like 3R at the cost of the person disposing of them."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 226,
+      "item": "Soy milk carton",
+      "notes": "While liquid paperboard cartons cannot be collected in Hamilton City Council's yellow kerbside recycling bins, they can be rinsed and dropped off at SaveBoard at 30 Sunshine Ave, Hamilton. See here for a list of other locations around Hamilton where you can drop of your liquid paperboard cartons."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 227,
+      "item": "Steel",
+      "notes": "Check with local scrap metal recyclers for disposal options."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 228,
+      "item": "Steel cans (clean)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 229,
+      "item": "Stripped wallpaper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 230,
+      "item": "Supermarket fruit and vegetable bags",
+      "notes": "Could you purchase loose (package-free) fruit and veg instead?"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 231,
+      "item": "Takeaway containers (clean cardboard or plastic, with numbers 1, 2 or 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 232,
+      "item": "Takeout containers (clean cardboard or plastic, with numbers 1, 2, or 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 233,
+      "item": "Tapes or videos"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 234,
+      "item": "Textiles",
+      "notes": "Is there a local charity that you could donate to? If not in good condition, please place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 235,
+      "item": "Till receipt - eftpos, thermal paper"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 236,
+      "item": "Tin cans (clean, lid inside)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 237,
+      "item": "Tin foil",
+      "notes": "Aluminium foil/tinfoil is often contaminated with food, and is too small and too low value to recycle."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 238,
+      "item": "Tinfoil",
+      "notes": "Aluminium foil/tinfoil is often contaminated with food, and is too small and too low value to recycle."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 239,
+      "item": "Tissue"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 240,
+      "item": "Toilet paper rolls"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 241,
+      "item": "Toilet rolls"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 242,
+      "item": "Toothpaste boxes"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 243,
+      "item": "Toothpaste pump",
+      "notes": "Can be recycled as part of the TerraCycle® program. Find out more information and nearby drop-off points here."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 244,
+      "item": "Toothpaste tube",
+      "notes": "Can be recycled as part of the TerraCycle® program. Find out more information and nearby drop-off points here."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 245,
+      "item": "Tray (expanded polystyrene)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 246,
+      "item": "Tuna can (clean)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 247,
+      "item": "Unwashed containers"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 248,
+      "item": "Vacuum bag"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 249,
+      "item": "Vacuum dust"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 250,
+      "item": "Video cassettes"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 251,
+      "item": "Wallpaper"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 252,
+      "item": "Washing powder box (remove scoop & liner)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 253,
+      "item": "Washing powder plastic scoop"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 254,
+      "item": "Waste oil",
+      "notes": "Oil is free to drop off at the Lincoln Street Transfer Station (60 Lincoln Street, Frankton, Hamilton). Alternatively, check with a local mechanic or garage to see if they dispose of motor oil."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 255,
+      "item": "Water bottles (plastic with numbers 1, 2 or 5 in the triangle, lid removed)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 256,
+      "item": "Water filter unit"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 257,
+      "item": "Wax covered cardboard cartons"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 258,
+      "item": "Waxed paper"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 259,
+      "item": "Weeds",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham St, Frankton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 260,
+      "item": "Wet paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 261,
+      "item": "Window glass (wrapped)"
+    },
+    {
+      "bin": "glass",
+      "destination": "This item goes into your glass recycling crate.",
+      "id": 262,
+      "item": "Wine bottles (no lids)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 263,
+      "item": "Wood - untreated",
+      "notes": "Check with local construction and demolition companies for options, or dispose of at Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 264,
+      "item": "Wrap, gladwrap, film, cling film",
+      "notes": "Could you use beeswax or reusable sandwich wraps instead?"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 265,
+      "item": "Wrapping paper (paper material only)",
+      "notes": "Plastic covering, glitter or other materials on the wrapping paper make it difficult to recycle so please double-check the material before placing it in recycling. If unsure pop it in the red rubbish wheelie bin."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 266,
+      "item": "Large yoghurt containers (clean, with number 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 267,
+      "item": "Zip-lock bags"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 268,
+      "item": "Meat bones"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 269,
+      "item": "Chicken bones"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 270,
+      "item": "Fish bones"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 271,
+      "item": "Fruit peelings"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 272,
+      "item": "Vegetable peelings"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 273,
+      "item": "Raw or cooked meat"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 274,
+      "item": "Bread"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 275,
+      "item": "Dairy - cheese, yoghurt"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 276,
+      "item": "Cooked food"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 277,
+      "item": "Kitchen paper towels"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 278,
+      "item": "Dead flowers",
+      "notes": "Indoor/bouquet sized amounts only."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 279,
+      "item": "Indoor cut flowers"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 280,
+      "item": "Coffee grounds"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 281,
+      "item": "Tea leaves"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 282,
+      "item": "Tea bags"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 283,
+      "item": "Egg shells"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 284,
+      "item": "Seafood shells"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 286,
+      "item": "Compostable food or drink containers",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the food scraps."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 287,
+      "item": "Plastic or compostable bags",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the food scraps."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 288,
+      "item": "Home compostable packaging",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the food scraps."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 289,
+      "item": "Garden weeds",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham St, Frankton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 290,
+      "item": "Fat - cooled only"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 291,
+      "item": "Weeds",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham St, Frankton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 292,
+      "item": "Garden waste",
+      "notes": "Green waste should not be placed in any of your bins - please compost it at home in a separate composting system, take it to Hamilton Organic Centre (18 Wickham St, Frankton) or arrange a green waste collection with a private contractor."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 295,
+      "item": "Ash - hot"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 296,
+      "item": "Compostable packaging",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the food scraps."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 297,
+      "item": "Pet waste (bag or wrap)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 298,
+      "item": "Reusable items",
+      "notes": "Is there a local charity that you could donate to? If not in good condition but the item is recyclable, please put it in the yellow recycling wheelie bin. Alternatively place in the red rubbish wheelie bin or dispose of at Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 299,
+      "item": "Juice box",
+      "notes": "While liquid paperboard cartons cannot be collected in Hamilton City Council's yellow kerbside recycling bins, they can be rinsed and dropped off at SaveBoard at 30 Sunshine Ave, Hamilton. See here for a list of other locations around Hamilton where you can drop of your liquid paperboard cartons."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 300,
+      "item": "Foil bag"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 301,
+      "item": "Foil wrapper",
+      "notes": "Some can be recycled via the Soft Plastics Recycling Scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 302,
+      "item": "Plastic coated paper (cannot be ripped)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 303,
+      "item": "Paper - glossy"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 304,
+      "item": "Paper - coloured"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 306,
+      "item": "Receipts - paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 307,
+      "item": "Receipts - eftpos (thermal paper)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 308,
+      "item": "Books - hard cover",
+      "notes": "If in good condition, please consider donating e.g. to a school, secondhand store or event (Rotary Book Fair) instead."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 309,
+      "item": "Hard cover books",
+      "notes": "If in good condition, please consider donating e.g. to a school, secondhand store or event (Rotary Book Fair) instead."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 310,
+      "item": "Paper - stapled"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 311,
+      "item": "Wood - treated",
+      "notes": "Check with local construction and demolition companies for options, or dispose of at Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 312,
+      "item": "Wrapping paper - metallic, shiny (soft plastic)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 315,
+      "item": "Mirrors (broken - wrap)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 316,
+      "item": "Nappies - compostable",
+      "notes": "There is currently no standard for 'compostable' materials, so some will break down whereas others will not. They need to be placed in the red rubbish wheelie bin to avoid contaminating the recycling."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 317,
+      "item": "Packaging - soft plastic",
+      "notes": "Can be recycled via the Soft Plastics Recycling scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 318,
+      "item": "Mushroom bag - paper (clean)",
+      "notes": "If dirty, use the bag to line your food scraps bin!"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 319,
+      "item": "Paper carry bag",
+      "notes": "Could you reuse it first?"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 320,
+      "item": "Carry bag - plastic, textile",
+      "notes": "Could you reuse it first?"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 321,
+      "item": "Carry bag - paper",
+      "notes": "Could you reuse it first?"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 322,
+      "item": "Till receipt - paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 323,
+      "item": "Baking paper"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 324,
+      "item": "Plastic cutlery"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 325,
+      "item": "Recyclable plastic bags - food boxes"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 326,
+      "item": "Food box recyclable plastic bags with wool liner",
+      "notes": "Does the company offer a recycling or return scheme? Alternatively check the Soft Plastics Recycling Scheme at participating Countdown and The Warehouse stores. See www.recycling.kiwi.nz for more information."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 328,
+      "item": "Tea bags - paper, cornstarch, cellulose bags"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 329,
+      "item": "Tea bags - Nylon or polyethylene bags, synthetic fibres"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 333,
+      "item": "Aluminium Tubes",
+      "notes": "Check with local construction and demolition companies for options, or dispose of at Lincoln St Transfer Station (60 Lincoln St, Frankton, Hamilton)."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 334,
+      "item": "Blister Packs (pill/tablet packs)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 335,
+      "item": "Perfume bottle"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 336,
+      "item": "Butane gas refills",
+      "notes": "Lincoln St Transfer Station (60 Lincoln Street, Frankton, Hamilton) and some metal recyclers may also accept empty gas canisters, but phone to check first."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 337,
+      "item": "Coffee pods"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 338,
+      "item": "Lithium batteries",
+      "notes": "Batteries are a health and safety hazard and should not be placed in any of your kerbside bins. They can cause fires in the collection trucks, sorting centre and landfills. You can take household batteries, such as car batteries, small lithium batteries from household appliances and small alkaline batteries such as AA, AAA and D cell (including rechargeable) to the Lincoln Street Resource Recovery Centre, at 60 Lincoln Street, Frankton for free disposal."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 339,
+      "item": "Car battery",
+      "notes": "Some mechanics will accept larger batteries like car batteries. Give your local garage a call to double check."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 340,
+      "item": "Roll on deodorant",
+      "notes": "Plastic and glass roll-on deodorant needs to go in the red rubbish bin because they’re typically made up of multiple different plastics/materials."
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 341,
+      "item": "Chewing gum pots (clean, with numbers 1, 2, or 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 342,
+      "item": "Chewing gum pot (with foil)",
+      "notes": "If the chewing gum pot has any type of foil or metal around it, then it can't be recycled so needs to go in the red rubbish wheelie bin."
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 343,
+      "item": "Napkins"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 344,
+      "item": "Body wash (empty with numbers 1, 2, or 5 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 345,
+      "item": "Body wash bottle (no plastic type number)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 346,
+      "item": "Sellotape"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 347,
+      "item": "Ice cream container lid",
+      "notes": "You can recycle these for free at the Lincoln St Resource Recovery Centre."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 348,
+      "item": "Tissues (soiled/used)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 349,
+      "item": "Vacuum dust (contaminated)",
+      "notes": "If the vacuum dust is contaminated (includes pieces of plastic, synthetic fiber or shards of glass), please put this in your red rubbish wheelie bin."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 350,
+      "item": "Chop sticks (untreated wood)"
+    },
+    {
+      "bin": "food-scraps",
+      "destination": "This item goes into your food scraps bin.",
+      "id": 351,
+      "item": "Wooden cutlery (untreated wood)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 353,
+      "item": "Lids - bottles",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 354,
+      "item": "Lids (metal lids from wine and beer bottles)",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 355,
+      "item": "Lids (glass bottles and jars)",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 356,
+      "item": "Lids (margarine and yoghurt containers)",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 357,
+      "item": "Lids (plastic soft drink bottles)",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 358,
+      "item": "Lids (pots)",
+      "notes": "Recycling drop-off points for metal and plastic lids are available free of charge at the Refuse Transfer Station on Lincoln Street. Lids placed in these bins will be processed separately from the kerbside recycling collection."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 359,
+      "item": "Gas cylinders (camping)",
+      "notes": "You can drop these free of charge at Gas Pro - 134 Grey Street Hamilton, and they will be recycled. Give them a call on 07 856 7022 if you have any questions."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 361,
+      "item": "Dryer lint"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 362,
+      "item": "Cooking oil",
+      "notes": "Excess cooking oil can be taken to the Lincoln Street Transfer Station (60 Lincoln Street, Frankton, Hamilton). This can't go in the rubbish wheelie bin because rubbish is compacted in the trucks and there’s a risk of the oil leaking and causing a fire inside the truck. Empty plastic cooking oil bottles (plastic types 1-7) can be put in the mixed recycling wheelie bin and empty glass cooking oil bottles can be put in the glass crate if they are thoroughly rinsed with lids removed."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 363,
+      "item": "Whiteware (fridges, dishwashers etc)",
+      "notes": "This can be dropped off at the Lincoln Street Resource Recovery Centre in Frankton for free."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 364,
+      "item": "Lids (plastic with recycling symbol)",
+      "notes": "Plastic lids can be recycled for free at the Lincoln Street Transfer Station (60 Lincoln Street, Frankton, Hamilton). Lids dropped off here will be processed separately from the kerbside recycling collection. If you can't drop these off at the refuse transfer station they can go into the red rubbish wheelie bin."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 365,
+      "item": "Lids (plastic without recycling symbol)"
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 366,
+      "item": "Lids (metal)",
+      "notes": "Metal lids can be recycled for free at the Lincoln Street Transfer Station (60 Lincoln Street, Frankton, Hamilton). Lids dropped off here will be processed separately from the kerbside recycling collection. If you can't get to the refuse transfer station they can go into the red rubbish wheelie bin."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 367,
+      "item": "Helium gas canisters",
+      "notes": "These can be taken to the Lincoln St Resource Recovery Centre (60 Lincoln Street, Frankton, Hamilton) or some metal recyclers may accept empty bottles, but phone to check first."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 368,
+      "item": "Hazardous materials",
+      "notes": "A number of household hazardous materials can be taken to the Lincoln Street Resource Recover Centre in Frankton free of charge. These materials include: Used motor Oil Car Batteries Dry cell and lithium batteries Household and garden chemicals Paint Household quantities of flammable, toxic, explosive, eco toxic or radioactive material."
+    },
+    {
+      "bin": "other",
+      "destination": "Other disposal.",
+      "id": 369,
+      "item": "Vape",
+      "notes": "Flammable - do not place in any kerbside bin. Talk to your preferred vape supplier about a battery return scheme or dispose at the Lincoln Street Resource Recovery Centre for free."
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 370,
+      "item": "Styrofoam"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 371,
+      "item": "Small yoghurt pottles (number 6 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 372,
+      "item": "Small sour cream pottles (number 6 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 373,
+      "item": "Cracker trays (number 3 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 374,
+      "item": "Soft plastics (plastics you can scrunch in your hand)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 375,
+      "item": "Tomato ketchup, mustard, and BBQ sauce squeeze bottles (no number)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 376,
+      "item": "Tomato ketchup, mustard, and BBQ sauce squeeze bottles (number 6 in the triangle)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 377,
+      "item": "Dip containers"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 378,
+      "item": "Potato bags (soft plastic)"
+    },
+    {
+      "bin": "red",
+      "destination": "This item goes into the red rubbish wheelie bin.",
+      "id": 379,
+      "item": "Rice bags (soft plastic)"
+    },
+    {
+      "bin": "yellow",
+      "destination": "This item goes into the yellow recycling wheelie bin",
+      "id": 380,
+      "item": "Tomato ketchup, mustard, and BBQ sauce squeeze bottles (clean, with number 5 in the triangle)"
+    }
+  ],
+  "source": {
+    "url": "https://hamilton.govt.nz/fight-the-landfill",
+    "verifiedOn": "2026-10-03"
+  }
+}
